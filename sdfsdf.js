@@ -1,7 +1,0 @@
-sdfsdfsadfasdfasdfas
-
-function(){
-
-	
-}
-asdfasdf
