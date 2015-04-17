@@ -3,10 +3,20 @@
 	<head>
 	<meta name="description" content="Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.">
 		<title>asdfassadfasfasdfasdf</title>
+		<!-- for Facebook -->          
+<meta property="og:title" content="ddddddd" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://everydayparenting.com/wp-content/uploads/2014/08/tip-2.jpg" />
+<meta property="og:url" content="kp.org" />
+<meta property="og:description" content="cccccccccccccccccccc" />
+
+<!-- for Twitter -->          
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta property="og:url" content="https://teary.github.io/test/index.html">
-		<meta property="og:image" content="http://everydayparenting.com/wp-content/uploads/2014/08/tip-2.jpg">
-		<meta property="og:title" content="Tip: A lot of #kids find #painting #soothing, do it together. - Everyday Parenting">
+		 
 		<style>
 div{
 	background-color:#0079aa;
@@ -41,6 +51,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nisi laborum am
    target="_blank" title="Share on Twitter">sdfasfasfasdfasdf
 </a>
 <p>
+<a href='https://www.facebook.com/dialog/feed?app_id=145634995501895&display=popup&caption=An%20example%20asdfasdfasdfasdcaption&link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdialogs%2F&redirect_uri=https://developers.facebook.com/tools/explorer'  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">asdfadsf</a>
+<p>
 
 <script>
     function fbShare(url, title, descr, image, winWidth, winHeight) {
@@ -49,6 +61,19 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nisi laborum am
         window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
     }
 </script>
-<a href="javascript:fbShare('http://jsfiddle.net/stichoza/EYxTJ/', 'Fb Share', 'Facebook share popup', 'http://goo.gl/dS52U', 520, 350)">Share</a>
+<a href="javascript:fbShare('kp.org', 'Fb Share', 'Facebook share popup', 'http://goo.gl/dS52U', 520, 350)">Share</a>
+
+<div id="mImageBox">
+<img id='my_image' src='http://thrive.proferochina.com/care-near-you/southern-california/losangeles/wp-content/themes/scal-microsites/img/icons/white/welcome-retina.png' alt='12312312' width="auto" height="auto" onclick="fbs_click(this)"/>
+</div>
+
+<script>
+     function fbs_click(TheImg) {
+     u=TheImg.src;
+     // t=document.title;
+    t=TheImg.getAttribute('alt');
+    window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
+}
+</script>
 
 </body></html>
