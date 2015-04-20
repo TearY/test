@@ -176,8 +176,7 @@
       	}); 
       
       
-      	event.stopPropagation();
-      	event.cancelBubble = true
+      window.event?(event.cancelBubble = true):event.stopPropagation();
       	return false;
       }
       function createVideo(id,width,height){
