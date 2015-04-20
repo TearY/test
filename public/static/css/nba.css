@@ -196,6 +196,7 @@ body {
 @media (max-width: 767px) {
   .main-content .big-video .pop-info .video-info {
     position: absolute;
+    top: 0;
     right: 0;
     font: 14px/26px 'Gotham Light';
   }
