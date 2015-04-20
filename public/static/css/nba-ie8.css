@@ -1,8 +1,8 @@
 .pop-info,.show-big-video-transition{
-  display block !important
+  display:block
 }
 .pop-info-transition,.show-big-video{
-  display none !important
+  display:none
 }
 .main-content .stories .story hr{
   margin-left:-370px;
