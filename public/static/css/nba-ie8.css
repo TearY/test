@@ -1,7 +1,7 @@
-.pop-info,.show-big-video-transition{
+.pop-info , .show-big-video-transition{
   display block 
 }
-.pop-info-transition,.show-big-video{
+.pop-info-transition, .show-big-video{
   display none
 }
 .main-content .stories .story hr{
