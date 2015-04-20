@@ -207,6 +207,7 @@ body {
 @media (max-width: 767px) {
   .main-content .big-video .pop-info-transition {
     width: 320px;
+    display: none;
   }
   .main-content .big-video .pop-info-transition .offensive {
     display: none;
