@@ -191,7 +191,7 @@
       	id=id||'ZyuOCqb1k1g';
       	var url = 'https://www.youtube.com/embed/'+id+'?enablejsapi=1&rel=0&showinfo=0&autohide=1&color=white&theme=light&autoplay=1'
       	var iframe = document.createElement('iframe');
-      	iframe.width=width;
+      	iframe.width=window.event?480:width;
       	iframe.height=height;
       	iframe.frameBorder=0;
       	iframe.scrolling = 'no';
