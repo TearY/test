@@ -161,6 +161,7 @@
       function closeVideo(){
       	var bg = $('.close-video').parent();
       	bg.prev('img').removeClass('bgScale');
+      	bg.find('>iframe').hide();
       	bg.find('>a,>iframe').remove(); 
       	bg.each(function(){
       		var _bg = $(this);
