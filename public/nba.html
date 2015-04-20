@@ -177,6 +177,7 @@
       
       
       	event.stopPropagation();
+      	event.cancelBubble = true
       	return false;
       }
       function createVideo(id,width,height){
