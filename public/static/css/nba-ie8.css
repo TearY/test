@@ -1,0 +1,9 @@
+.pop-info,.show-big-video-transition{
+  display block 
+}
+.pop-info-transition,.show-big-video{
+  display none
+}
+.main-content .stories .story hr{
+  margin-left:-370px;
+}

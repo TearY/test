@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <link rel="stylesheet" type="text/css" href="./static/css/main.min.css">
+    <script text="text/javascript" src="./static/js/jquery.min.js"></script>
+    <script text="text/javascript" src="./static/js/menu.js"></script><!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="./static/css/main-ie8.css">
+    <script src="./static/js/html5shiv.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="kaiser">
+      <div class="offcanvas-container">
+        <!-- header start-->
+        <div class="skipnav"><a href="#maincontent">Skip to main content</a></div>
+        <div class="location-push-down">
+          <ul>
+            <li>
+              <div class="ghost-center"><a href="#">Nothern<br>California</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Southern<br>California</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Colorado /<br>Denver-Boulder</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Nothern<br>Colorado</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Southern<br>Colorado</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Georgia</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Hawaii</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Mid-Atlantic States</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Northwest</a></div>
+            </li>
+          </ul>
+        </div>
+        <header>
+          <button alt="Open mobile menu" title="Mobile menu - closed" class="mobile-menu">Open mobile menu</button>
+          <div class="main-menu"><a href="././" class="logo"><img src="./static/img/logo.png"></a>
+            <ul class="desktop">
+              <li><a href="#" class="grey">Find a Doctor</a></li>
+              <li class="separator"></li>
+              <li><a href="#" class="grey">Find a Facility</a></li>
+              <li class="separator kiwi-visible-m"></li>
+              <li class="kiwi-visible-m"><a href="#" class="grey">Español</a></li>
+              <li class="member kiwi-hidden-m"><a href="#">Already a member?</a></li>
+              <li class="login"><a href="#">Sign On</a></li>
+              <li class="kiwi-hidden-m"><a href="#" class="grey">Español</a></li>
+            </ul>
+            <ul class="mobile">
+              <li><a href="#" class="grey">Español</a></li>
+            </ul>
+          </div>
+          <nav>
+              <ul class="menu-line">
+                <li><a href="#" class="link-category-section">Shop Our Plans</a>
+                  <div class="submenu-content stick-left">
+                      <ol class="list-left">
+                        <li><a href="#cat1" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat2" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat3" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                      </ol>
+                      <ol class="list-right">
+                        <li>
+                          <p><a href="#" class="is-external"><span class="pic-content"></span><span class="link-title">toto toto totototo toto toto tototo toto toto toto<span class="external-link"></span></span></a></p>
+                        </li>
+                        <li>
+                          <p><a href="#"><span class="pic-content"></span><span class="link-title">toto</span></a></p>
+                        </li>
+                      </ol>
+                  </div>
+                </li>
+                <li><a href="#" class="link-category-section">In Your Area</a>
+                  <div class="submenu-content stick-left">
+                      <ol class="list-left">
+                        <li><a href="#cat1" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat2" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat3" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                      </ol>
+                      <ol class="list-right">
+                        <li>
+                          <p><a href="#" class="is-external"><span class="pic-content"></span><span class="link-title">toto toto totototo toto toto tototo toto toto toto<span class="external-link"></span></span></a></p>
+                        </li>
+                        <li>
+                          <p><a href="#"><span class="pic-content"></span><span class="link-title">toto</span></a></p>
+                        </li>
+                      </ol>
+                  </div>
+                </li>
+                <li><a href="#" class="link-category-section">Easer Healthcare</a>
+                  <div class="submenu-content stick-left">
+                      <ol class="list-left">
+                        <li><a href="#cat1" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat2" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat3" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                      </ol>
+                      <ol class="list-right">
+                        <li>
+                          <p><a href="#" class="is-external"><span class="pic-content"></span><span class="link-title">toto toto totototo toto toto tototo toto toto toto<span class="external-link"></span></span></a></p>
+                        </li>
+                        <li>
+                          <p><a href="#"><span class="pic-content"></span><span class="link-title">toto</span></a></p>
+                        </li>
+                      </ol>
+                  </div>
+                </li>
+                <li><a href="#" class="link-category-section">Healthier Outcomes</a>
+                  <div class="submenu-content stick-right">
+                      <ol class="list-left">
+                        <li><a href="#cat1" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat2" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat3" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                      </ol>
+                      <ol class="list-right">
+                        <li>
+                          <p><a href="#" class="is-external"><span class="pic-content"></span><span class="link-title">toto toto totototo toto toto tototo toto toto toto<span class="external-link"></span></span></a></p>
+                        </li>
+                        <li>
+                          <p><a href="#"><span class="pic-content"></span><span class="link-title">toto</span></a></p>
+                        </li>
+                      </ol>
+                  </div>
+                </li>
+                <li><a href="#" class="link-category-section">Social Postings</a>
+                  <div class="submenu-content stick-right">
+                      <ol class="list-left">
+                        <li><a href="#cat1" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat2" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat3" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                      </ol>
+                      <ol class="list-right">
+                        <li>
+                          <p><a href="#" class="is-external"><span class="pic-content"></span><span class="link-title">toto toto totototo toto toto tototo toto toto toto<span class="external-link"></span></span></a></p>
+                        </li>
+                        <li>
+                          <p><a href="#"><span class="pic-content"></span><span class="link-title">toto</span></a></p>
+                        </li>
+                      </ol>
+                  </div>
+                </li>
+              </ul>
+          </nav>
+        </header>
+        <nav class="mobile-menu">
+          <button alt="Close mobile menu" title="Close mobile menu" class="close-mobile-menu">Close mobile menu</button>
+            <ul class="menu-line">
+              <li><a href="#" class="link-category-section">Shop Our Plans</a>
+                <button title="Shop Our Plans - closed">Open/Close the sub menu</button>
+                <ol>
+                  <li><a href="#" class="is-external">Link 1<span class="external-link"></span></a></li>
+                  <li><a href="#">link 2<span class="external-link"></span></a></li>
+                  <li><a href="#">link 3<span class="external-link"></span></a></li>
+                </ol>
+              </li>
+              <li><a href="#" class="link-category-section">In Your Area</a>
+                <button title="In Your Area - closed">Open/Close the sub menu</button>
+                <ol>
+                  <li><a href="#" class="is-external">Link 1<span class="external-link"></span></a></li>
+                  <li><a href="#">link 2<span class="external-link"></span></a></li>
+                  <li><a href="#">link 3<span class="external-link"></span></a></li>
+                </ol>
+              </li>
+              <li><a href="#" class="link-category-section">Easer Healthcare</a>
+                <button title="Easer Healthcare - closed">Open/Close the sub menu</button>
+                <ol>
+                  <li><a href="#" class="active">Home<span class="external-link"></span></a></li>
+                  <li><a href="#">Link 1<span class="external-link"></span></a></li>
+                  <li><a href="#">link 2<span class="external-link"></span></a></li>
+                  <li><a href="#">link 3<span class="external-link"></span></a></li>
+                </ol>
+              </li>
+              <li><a href="#" class="link-category-section">Healthier Outcomes</a>
+                <button title="Healthier Outcomes - closed">Open/Close the sub menu</button>
+                <ol>
+                  <li><a href="#" class="active">Home<span class="external-link"></span></a></li>
+                  <li><a href="#">Link 1<span class="external-link"></span></a></li>
+                  <li><a href="#">link 2<span class="external-link"></span></a></li>
+                  <li><a href="#">link 3<span class="external-link"></span></a></li>
+                </ol>
+              </li>
+              <li><a href="#" class="link-category-section">Social Postings</a>
+                <button title="Social Postings - closed">Open/Close the sub menu</button>
+                <ol>
+                  <li><a href="#" class="active">Home<span class="external-link"></span></a></li>
+                  <li><a href="#">Link 1<span class="external-link"></span></a></li>
+                  <li><a href="#">link 2<span class="external-link"></span></a></li>
+                  <li><a href="#">link 3<span class="external-link"></span></a></li>
+                </ol>
+              </li>
+              <li class="extra-mobile-links"><a href="#">Find a Doctor </a></li>
+              <li class="extra-mobile-links"><a href="#">Locate a Facility </a></li>
+            </ul>
+        </nav>
+        <!-- header end-->
+        <div id="maincontent" class="main-content">
+          <div class="easier-healthcare">
+            <div class="gb-top-block"><img src="./static/img/homepage/gb-top-mobile.jpg" alt="" class="mobile-version"></div>
+              <div class="countdown-block">
+                <input type="hidden" value="2015-2-15-02-00" id="serverDate">
+                <input type="hidden" value="2014-11-22-10-00" id="currentDate">
+                <div class="countdown-date">
+                  <div class="countdown-pair countdown-day">
+                    <div class="countdown-key"></div>
+                    <div class="countdown-value"> </div>
+                  </div>
+                  <div class="countdown-pair countdown-hour">
+                    <div class="countdown-key"></div>
+                    <div class="countdown-value"> </div>
+                  </div>
+                </div>
+                <div class="countdown-text">
+                  <p> <strong>Don't forget.</strong><span> Marketplace  enrollment ends February 15th.</span></p>
+                </div>
+                <div class="countdown-operate">
+                  <div class="remindMeWrapper"><a name="RemindMe" aria-haspopup="true" href="javascript:void(0)" data-start="10-05-2014" data-end="5-02-2015" data-zonecode="40" data-summary="Summary of the event" data-description="Description of the event" data-location="Location of the event" data-organizer="Organizer" data-organiser-email="Organizer e-mail" data-all-day-event="false" data-date-format="DD/MM/YYYY" class="remind-me">Remind Me</a>
+                    <ul class="remind-me-menu">
+                      <li><a href="javascript:void(0);" tabindex="0" data-calendar="outlook">Outlook Calendar</a></li>
+                      <li><a href="javascript:void(0);" tabindex="0" data-calendar="google">Google Calendar</a></li>
+                      <li><a href="javascript:void(0);" tabindex="0" data-calendar="yahoo">Yahoo Calendar</a></li>
+                      <li><a href="javascript:void(0);" tabindex="0" data-calendar="hotmail">Hotmail Calendar</a></li>
+                      <li><a href="javascript:void(0);" tabindex="0" data-calendar="ical">Ical Calendar  </a></li>
+                    </ul><a tabindex="0" href="https://individual-family.kaiserpermanente.org/healthinsurance/" target="_blank" class="getCoverage"> Get Coverage<span class="arrow-corner"> </span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="countdown-block-lastday"> 
+                <div class="countdown-text"> 
+                  <p> <strong>Today is the last day for Marketplace  enrollment </strong><span>Find your coverage now.</span></p>
+                </div>
+                <div class="countdown-operate"> <a tabindex="0" href="https://individual-family.kaiserpermanente.org/healthinsurance/" target="_blank" class="getCoverage"> Get Coverage<span class="arrow-corner">  </span></a></div>
+              </div>
+            <div class="gb-bread-crumbs">
+              <ol>
+                <li><a href="#">Home</a><span>&gt;</span></li>
+                <li class="last"><a href="#">Easier Healthcare</a></li>
+              </ol>
+            </div>
+            <div class="first-block">
+              <div class="gb-content-width p20">
+                <h1>Shop Kaiser Permanente Healthcare Plans</h1>
+                <p class="g-sub-title">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+              </div>
+            </div>
+            <div class="second-block">
+              <div class="gb-content-width p20">
+                <h2 anchor-name="cat1">Healthcare Designed For Your Life</h2>
+                <ul>
+                  <li class="elem1 active"><a href="#elem1"><span class="picture-holder"><span class="icons icon1"></span></span><span class="p">Lorem Ipsum is simply</span></a>
+                    <div class="tab-block">
+                      <div class="kiwi-grid">
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy 1</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-icon"><img src="./static/img/icons/color/check.png" alt=""/></div>
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="elem2"><a href="#" alt="Lorem Ipsum is simply"><span class="picture-holder"><span class="icons icon2"></span></span><span class="p">Lorem Ipsum is simply</span></a>
+                    <div class="tab-block">
+                      <div class="kiwi-grid">
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy 2</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-icon"><img src="./static/img/icons/color/check.png" alt=""/></div>
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="elem3"><a href="#" alt="Lorem Ipsum is simply"><span class="picture-holder"><span class="icons icon3"></span></span><span class="p">Lorem Ipsum is simply</span></a>
+                    <div class="tab-block">
+                      <div class="kiwi-grid">
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy 3</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-icon"><img src="./static/img/icons/color/check.png" alt=""/></div>
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="elem4"><a href="#" alt="Lorem Ipsum is simply"><span class="picture-holder"><span class="icons icon4"></span></span><span class="p">Lorem Ipsum is simply</span></a>
+                    <div class="tab-block">
+                      <div class="kiwi-grid">
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy 4</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-icon"><img src="./static/img/icons/color/check.png" alt=""/></div>
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="elem5"><a href="#" alt="Lorem Ipsum is simply"><span class="picture-holder"><span class="icons icon5"></span></span><span class="p">Lorem Ipsum is simply</span></a>
+                    <div class="tab-block">
+                      <div class="kiwi-grid">
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy 5</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-icon"><img src="./static/img/icons/color/check.png" alt=""/></div>
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="elem6"><a href="#" alt="Lorem Ipsum is simply"><span class="picture-holder"><span class="icons icon6"></span></span><span class="p">Lorem Ipsum is simply</span></a>
+                    <div class="tab-block">
+                      <div class="kiwi-grid">
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy 6</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-icon"><img src="./static/img/icons/color/check.png" alt=""/></div>
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="elem7"><a href="#" alt="Lorem Ipsum is simply"><span class="picture-holder"><span class="icons icon7"></span></span><span class="p">Lorem Ipsum is simply</span></a>
+                    <div class="tab-block">
+                      <div class="kiwi-grid">
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy 7</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kiwi-col l-1-2 s-1">
+                          <div class="tab-content">
+                            <div class="tab-icon"><img src="./static/img/icons/color/check.png" alt=""/></div>
+                            <div class="tab-text">
+                              <h3>Lorem Ipsum is simply dummy</h3>
+                              <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="third-block">
+              <div class="picture-holder"><img src="./static/img/easier-healthcare/third-block-pic.png" alt=""></div>
+              <div class="gb-content-width p20">
+                <div class="text-content">
+                  <div class="kiwi-grid">
+                    <div class="kiwi-col l-1-2 s-1">
+                      <div class="picture-holder-title">
+                        <div class="icon-kp-app"></div>
+                      </div>
+                      <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                    </div>
+                    <div class="kiwi-col l-1-2 s-1">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                      </p><a href="#" class="learn-more">Learn more about our app</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fourth-block">
+              <div class="gb-content-width p20">
+                <h2 anchor-name="cat2">What Healthcare and Coverage Means to you</h2>
+                <div class="video-container"><a href="https://www.youtube.com/embed/M7lc1UVf-VE" target="_blank" class="mobile-video-link">Wacth video on youtube</a>
+                  <button class="close-video-button">Close video</button>
+                  <div data-bg="./static/img/easier-healthcare/video-holder.png" data-video="M7lc1UVf-VE" class="play-video-content">
+                    <h3>Kaiser Permanente 101</h3><a href="#" class="play-video"><span class="g-icon icon-arrow-circle-28"></span>Play video</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fifth-block">
+              <div class="gb-content-width p20">
+                <p><span class="image-holder"><span class="icon-kp-layer-20-01"></span></span><span class="bold">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+              </div>
+            </div>
+            <div class="sixth-block">
+              <div class="gb-content-width p20">
+                <h2 anchor-name="cat3">4 Ways to Get the Care You Need</h2>
+                <div class="kiwi-grid">
+                  <div class="kiwi-col l-1-4 s-1">
+                    <div class="picture-holder"><img src="./static/img/icons/white/mouse.png"></div>
+                    <div class="elem-content">
+                      <h3>ONLINE</h3>
+                      <div class="white-line"></div>
+                      <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <p><a href="#">Lorem Ipsum is simply dummy text<span class="arrow"></span></a></p>
+                    </div>
+                  </div>
+                  <div class="kiwi-col l-1-4 s-1">
+                    <div class="picture-holder"><img src="./static/img/icons/white/icon3.png"></div>
+                    <div class="elem-content">
+                      <h3>PHONE</h3>
+                      <div class="white-line"></div>
+                      <p><a href="#">+123-455-6666</a></p>
+                      <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <p><a href="#" class="link">link<span class="arrow">e</span></a></p>
+                    </div>
+                  </div>
+                  <div class="kiwi-col l-1-4 s-1">
+                    <div class="picture-holder"><img src="./static/img/icons/white/email.png"></div>
+                    <div class="elem-content">
+                      <h3>EMAIL</h3>
+                      <div class="white-line"></div>
+                      <p><a href="#">+123-455-6666</a></p>
+                      <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <p><a href="#" class="link">link<span class="arrow">e</span></a></p>
+                    </div>
+                  </div>
+                  <div class="kiwi-col l-1-4 s-1">
+                    <div class="picture-holder"><img src="./static/img/icons/white/calendar.png"></div>
+                    <div class="elem-content">
+                      <h3>IN PERSON</h3>
+                      <div class="white-line"></div>
+                      <p><a href="#">+123-455-6666</a></p>
+                      <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <p><a href="#" class="link">link<span class="arrow">e</span></a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="seventh-block">
+              <div class="gb-content-width p20">
+                <h2 anchor-name="cat4">Stories From Our Members</h2>
+                <div class="g-video-elements">
+                  <div class="video-container">
+                    <button alt="Close Video" class="close-video-button">Close video</button>
+                    <div class="data-container"><img src="./static/img/employer/video-bg.png">
+                      <div class="bg-content">
+                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry #1 </h3><a data-src="M7lc1UVf-VE" href="#" alt="Play video" class="play-video">WATCH VIDEO</a>
+                      </div>
+                    </div>
+                    <div class="data-container"><img src="./static/img/employer/video-bg.png">
+                      <div class="bg-content">
+                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry #2</h3><a data-src="M7lc1UVf-VE" href="#" alt="Play video" class="play-video">WATCH VIDEO</a>
+                      </div>
+                    </div>
+                    <div class="data-container"><img src="./static/img/employer/video-bg.png">
+                      <div class="bg-content">
+                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry #3</h3><a data-src="M7lc1UVf-VE" href="#" alt="Play video" class="play-video">WATCH VIDEO</a>
+                      </div>
+                    </div>
+                    <div class="data-container"><img src="./static/img/employer/video-bg.png">
+                      <div class="bg-content">
+                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry #4</h3><a data-src="M7lc1UVf-VE" href="#" alt="Play video" class="play-video">WATCH VIDEO</a>
+                      </div>
+                    </div>
+                    <div class="data-container"><img src="./static/img/employer/video-bg.png">
+                      <div class="bg-content">
+                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry #5</h3><a data-src="M7lc1UVf-VE" href="#" alt="Play video" class="play-video">WATCH VIDEO</a>
+                      </div>
+                    </div>
+                    <div class="data-container"><img src="./static/img/employer/video-bg.png">
+                      <div class="bg-content">
+                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry #6</h3><a data-src="M7lc1UVf-VE" href="#" alt="Play video" class="play-video">WATCH VIDEO</a>
+                      </div>
+                    </div>
+                    <div class="data-container"><img src="./static/img/employer/video-bg.png">
+                      <div class="bg-content">
+                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry #7</h3><a data-src="M7lc1UVf-VE" href="#" alt="Play video" class="play-video">WATCH VIDEO</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="video-selector"><a href="#" alt="Previous video" class="go-prev"></a><a href="#" alt="Next video" class="go-next"></a>
+                    <div class="slider-container">
+                      <table>
+                        <tr>
+                          <td>
+                            <div class="picture-holder"><img src="./static/img/employer/video-bg.png"></div>
+                            <div class="text-content">Video title</div>
+                          </td>
+                          <td>
+                            <div class="picture-holder"><img src="./static/img/employer/video-preview.png"></div>
+                            <div class="text-content">Video title</div>
+                          </td>
+                          <td>
+                            <div class="picture-holder"><img src="./static/img/employer/video-preview.png"></div>
+                            <div class="text-content">Video title</div>
+                          </td>
+                          <td>
+                            <div class="picture-holder"><img src="./static/img/employer/video-preview.png"></div>
+                            <div class="text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                          </td>
+                          <td>
+                            <div class="picture-holder"><img src="./static/img/employer/video-preview.png"></div>
+                            <div class="text-content">Video title</div>
+                          </td>
+                          <td>
+                            <div class="picture-holder"><img src="./static/img/employer/video-preview.png"></div>
+                            <div class="text-content">Video title</div>
+                          </td>
+                          <td>
+                            <div class="picture-holder"><img src="./static/img/employer/video-preview.png"></div>
+                            <div class="text-content">Video title </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="g-video-elements-mobile">
+                  <div class="g-video-elements-mobile-video-container">
+                    <button alt="Close Video" class="close-video-button">Close video</button>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.youtube.com/embed/M7lc1UVf-VE" target="_bank" data-src="M7lc1UVf-VE" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><span class="picture-holder"><img src="./static/img/employer/video-preview.png" alt="null"></span><span class="text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span></a></li>
+                    <li><a href="https://www.youtube.com/embed/M7lc1UVf-VE" target="_bank" data-src="M7lc1UVf-VE" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><span class="picture-holder"><img src="./static/img/employer/video-preview.png" alt="null"></span><span class="text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span></a></li>
+                    <li><a href="https://www.youtube.com/embed/M7lc1UVf-VE" target="_bank" data-src="M7lc1UVf-VE" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><span class="picture-holder"><img src="./static/img/employer/video-preview.png" alt="null"></span><span class="text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span></a></li>
+                    <li><a href="https://www.youtube.com/embed/M7lc1UVf-VE" target="_bank" data-src="M7lc1UVf-VE" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><span class="picture-holder"><img src="./static/img/employer/video-preview.png" alt="null"></span><span class="text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span></a></li>
+                    <li><a href="https://www.youtube.com/embed/M7lc1UVf-VE" target="_bank" data-src="M7lc1UVf-VE" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><span class="picture-holder"><img src="./static/img/employer/video-preview.png" alt="null"></span><span class="text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span></a></li>
+                    <li><a href="https://www.youtube.com/embed/M7lc1UVf-VE" target="_bank" data-src="M7lc1UVf-VE" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><span class="picture-holder"><img src="./static/img/employer/video-preview.png" alt="null"></span><span class="text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span></a></li>
+                    <li><a href="https://www.youtube.com/embed/M7lc1UVf-VE" target="_bank" data-src="M7lc1UVf-VE" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry."><span class="picture-holder"><img src="./static/img/employer/video-preview.png" alt="null"></span><span class="text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+              <div class="page-end-block">
+                <div class="title">
+                  <p>Don't forget. Marketplace enrollment ends February 15th.</p>
+                </div>
+                <p class="desc">We know choosing a plan can be stressful, but it's important that you get the care and coverage you need fou you and your family.Let us help guide you through the process.</p>
+                <div class="countdown-operate">
+                  <div class="remindMeWrapper"><a name="RemindMe" href="javascript:void(0)" aria-haspopup="true" data-start="10-05-2014" data-end="5-02-2015" data-zonecode="40" data-summary="Summary of the event" data-description="Description of the event" data-location="Location of the event" data-organizer="Organizer" data-organiser-email="Organizer e-mail" data-all-day-event="false" data-date-format="DD/MM/YYYY" class="remind-me">Remind Me</a>
+                    <ul class="remind-me-menu">
+                      <li><a href="javascript:void(0);" tabindex="0" data-calendar="outlook">Outlook Calendar</a></li>
+                      <li><a href="javascript:void(0);" tabindex="0" data-calendar="google">Google Calendar</a></li>
+                      <li><a href="javascript:void(0);" tabindex="0" data-calendar="yahoo">Yahoo Calendar</a></li>
+                      <li><a href="javascript:void(0);" tabindex="0" data-calendar="hotmail">Hotmail Calendar</a></li>
+                      <li><a href="javascript:void(0);" tabindex="0" data-calendar="ical">Ical Calendar  </a></li>
+                    </ul><a tabindex="0" href="https://individual-family.kaiserpermanente.org/healthinsurance/" target="_blank" class="getCoverage"> Get Coverage<span class="arrow-corner"> </span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="page-end-block-lastday">     
+                <div class="title"> 
+                  <p>Today is the last day for Marketplace  enrollment <br />Find your coverage now.</p>
+                </div>
+                <p class="desc">We know choosing a plan can be stressful, but it's important that you get the care and coverage you need fou you and your family.Let us help guide you through the process.</p>
+                <div class="countdown-operate"><a tabindex="0" href="https://individual-family.kaiserpermanente.org/healthinsurance/" target="_blank" class="getCoverage"> Get Coverage <span class="arrow-corner"> </span></a></div>
+              </div>
+          </div>
+          <!-- footer start-->
+          <footer>
+            <div class="grey-bg"></div>
+            <div class="gb-content-width p20">
+              <nav class="mobile">
+                <ul>
+                  <li><a href="#">Accessibility</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">Technical Information</a></li>
+                </ul>
+              </nav>
+              <nav class="desktop">
+                <div class="nav-column">
+                  <div class="main-title">Learn More</div>
+                  <ul>
+                    <li><a href="#">link 1</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 2</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 3</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 4</a></li>
+                  </ul>
+                </div>
+                <div class="nav-column">
+                  <div class="main-title">Our Regions</div>
+                  <ul>
+                    <li><a href="#">link 1</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 2</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 3</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 4</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 5</a></li>
+                  </ul>
+                </div>
+                <div class="nav-column">
+                  <div class="main-title">Visit our other sites</div>
+                  <ul>
+                    <li><a href="#">link 1</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 2</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 3</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 4</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 5</a></li>
+                  </ul>
+                </div>
+                <div class="nav-column side-border">
+                  <div class="main-title">Legal</div><span class="arrow"></span>
+                  <div class="left-separator"></div>
+                  <ul>
+                    <li><a href="#">link 1</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 2</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 3</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 4</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 5</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 6</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 7</a></li>
+                  </ul>
+                </div>
+                <div class="nav-column side-border">
+                  <div class="main-title"></div><span class="arrow"></span>
+                  <div class="left-separator"></div>
+                  <ul>
+                    <li><a href="#">link 1</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 2</a></li>
+                    <li class="space"></li>
+                    <li><a href="#">link 3</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="copy-block">
+                <p class="copy">&copy; 2014 Kaiser Permanente</p>
+                <p class="bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                  It has survived not only five centuries, but also the leap into electronic typesetting, 
+                  remaining essentially unchanged.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                  It has survived not only five centuries, but also the leap into electronic typesetting, 
+                  remaining essentially unchanged.
+                </p>
+              </div>
+            </div>
+          </footer>
+          <!-- footer end-->
+        </div>
+      </div>
+    </div>
+    <script src="./static/js/gVideoElements.js"></script>
+    <script src="./static/js/swipe.js"></script>
+    <script src="./static/js/easier-healthcare.js"></script>
+      <script src="./static/js/ate.js"></script>
+      <script src="./static/js/countdown.js"></script>
+      <script src="./static/js/remindMe.js"></script>
+  </body>
+</html>
