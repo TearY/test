@@ -163,14 +163,14 @@
       		var _bg = $(this);
       		if(_bg.hasClass('video-transition')) // main video transiton on bg
       		{
-      			bg.removeClass('video-transition').transition(function(bg){
+      			_bg.removeClass('video-transition').transition(function(bg){
       				bg.removeClass('bg0').find('img').fadeToggle();
-      			}(bg));
+      			}(_bg));
       		}
       		else if(_bg.parent().hasClass('video-transition')){ //story video transition on bg parent
-      			bg.parent().removeClass('video-transition video-transition1 video-transition2').transition(function(bg){
+      			_bg.parent().removeClass('video-transition video-transition1 video-transition2').transition(function(bg){
       				bg.removeClass('bg0').find('img').fadeToggle()
-      			}(bg)).next('.story-info').removeClass('mgt0');
+      			}(_bg)).next('.story-info').removeClass('mgt0');
       		}
       		else if(_bg.hasClass('show-big-video-transition')){  //big video
       			_bg.removeClass('show-big-video-transition');
@@ -236,7 +236,7 @@
           	var bg = $(this).parent();
       
           	bg.addClass('bg0').find('img').hide();
-          	bg.parent().addClass('video-transition').transition(function(){bg.append(createVideo('','100%','100%'))}).next('.story-info').addClass('mgt0');
+          	bg.parent().addClass('video-transition').transition(function(bg){bg.append(createVideo('','100%','100%'))}(bg)).next('.story-info').addClass('mgt0');
       
           	bg.append(createClose())
       	});
@@ -259,7 +259,7 @@
       			transitionName +=" video-transition2";
       		}
       		bg.addClass('bg0').find('img').hide();
-      		bg.parent().addClass(transitionName).transition(function(){bg.append(createVideo('','100%',270))}).next('.story-info').addClass('mgt0');
+      		bg.parent().addClass(transitionName).transition(function(bg){bg.append(createVideo('','100%',270))}(bg)).next('.story-info').addClass('mgt0');
           	bg.append(createClose())
           
       	})
