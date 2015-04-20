@@ -12,14 +12,19 @@
     <meta property="og:type" content="article" />		        
     <meta property="og:title" content="ddddddd" />
     <meta property="og:image" content="http://everydayparenting.com/wp-content/uploads/2014/08/tip-2.jpg" />
-    <meta property="og:url" content="http://127.0.0.1:3000/nba.html" />
+    <meta property="og:url" content="https://teary.github.io/test/index.html" />
     <meta property="og:description" content="cccccccccccccccccccc" />
+    <meta name="twitter:url" content="https://teary.github.io/test/index.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="aaa" />
+    <meta name="twitter:description" content="ddddddd" />
+    <meta name="twitter:image" content="http://everydayparenting.com/wp-content/uploads/2014/08/tip-2.jpg" />
   </head>
   <body>
     <div class="nav"></div>
     <div class="main-content">
       <div class="logo"><img src="./static/img/nba/lock-up.png" alt="NBA KAISER PERMANENTE LOGO" height="90"/></div>
-      <div class="share"><span aria-hidden="aria-hidden">SHARE THIS</span><a href="http://www.facebook.com/sharer.php?u=https://teary.github.io/test/index.html" class="facebook"><img src="./static/img/nba/fb.png" alt="share this page to facebook"/></a><a href="http://www.facebook.com/sharer.php?u=https://teary.github.io/test/index.html" class="twitter"><img src="./static/img/nba/tw.png" tabindex="0" alt="share this page to twitter"/></a></div>
+      <div class="share"><span aria-hidden="aria-hidden">SHARE THIS</span><a href="http://www.facebook.com/sharer.php?u=https://teary.github.io/test/index.html" class="facebook"><img src="./static/img/nba/fb.png" alt="share this page to facebook"/></a><a href="http://twitter.com/share?text=sadfasdfhttp://teary.github.io/test/index.html" class="twitter"><img src="./static/img/nba/tw.png" tabindex="0" alt="share this page to twitter"/></a></div>
       <div class="big-video"><img src="./static/img/nba/hero_image.jpeg" width="100%" height="100%" style="vertical-align:bottom" alt="" class="pc"/><img src="./static/img/nba/hero_mobile.jpeg" alt="" width="100%" class="mobile"/>
         <div class="pop-info">
           <div class="video-info"> 
@@ -163,14 +168,14 @@
       		var _bg = $(this);
       		if(_bg.hasClass('video-transition')) // main video transiton on bg
       		{
-      			_bg.removeClass('video-transition').transition(function(bg){
-      				bg.removeClass('bg0').find('img').fadeToggle();
-      			}(_bg));
+      			_bg.removeClass('video-transition').transition(function(){
+      				_bg.removeClass('bg0').find('img').fadeToggle();
+      			});
       		}
       		else if(_bg.parent().hasClass('video-transition')){ //story video transition on bg parent
-      			_bg.parent().removeClass('video-transition video-transition1 video-transition2').transition(function(bg){
+      			_bg.parent().removeClass('video-transition video-transition1 video-transition2').transition(function(){
       				bg.removeClass('bg0').find('img').fadeToggle()
-      			}(_bg)).next('.story-info').removeClass('mgt0');
+      			}).next('.story-info').removeClass('mgt0');
       		}
       		else if(_bg.hasClass('show-big-video-transition')){  //big video
       			_bg.removeClass('show-big-video-transition');
@@ -236,7 +241,7 @@
           	var bg = $(this).parent();
       
           	bg.addClass('bg0').find('img').hide();
-          	bg.parent().addClass('video-transition').transition(function(bg){bg.append(createVideo('','100%','100%'))}(bg)).next('.story-info').addClass('mgt0');
+          	bg.parent().addClass('video-transition').transition(function(){bg.append(createVideo('','100%','100%'))}).next('.story-info').addClass('mgt0');
       
           	bg.append(createClose())
       	});
@@ -259,7 +264,7 @@
       			transitionName +=" video-transition2";
       		}
       		bg.addClass('bg0').find('img').hide();
-      		bg.parent().addClass(transitionName).transition(function(bg){bg.append(createVideo('','100%',270))}(bg)).next('.story-info').addClass('mgt0');
+      		bg.parent().addClass(transitionName).transition(function(){bg.append(createVideo('','100%',270))}).next('.story-info').addClass('mgt0');
           	bg.append(createClose())
           
       	})
