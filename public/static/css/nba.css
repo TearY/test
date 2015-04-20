@@ -245,10 +245,16 @@ body {
 @media (max-width: 767px) {
   .main-content .big-video .show-big-video {
     height: 230px;
+    display: none;
   }
 }
 .main-content .big-video .show-big-video-transition {
   transform: scale(1);
+}
+@media (max-width: 767px) {
+  .main-content .big-video .show-big-video-transition {
+    display: block;
+  }
 }
 .main-content .offensive {
   width: 720px;
