@@ -1,20 +1,9 @@
-.pop-info 
-{
-  display block 
+.pop-info,.show-big-video-transition{
+  display block !important
 }
-.show-big-video-transition
-{
-  display block 
+.pop-info-transition,.show-big-video{
+  display none !important
 }
-.pop-info-transition
-{
-  display none
-}
-.show-big-video
-{
-  display none
-}
-.main-content .stories .story hr
-{
+.main-content .stories .story hr{
   margin-left:-370px;
 }
