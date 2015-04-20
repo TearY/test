@@ -191,7 +191,7 @@
       	id=id||'ZyuOCqb1k1g';
       	var url = 'https://www.youtube.com/embed/'+id+'?enablejsapi=1&rel=0&showinfo=0&autohide=1&color=white&theme=light&autoplay=1'
       	var iframe = document.createElement('iframe');
-      	iframe.width=window.event?480:width;
+      	iframe.width=width;
       	iframe.height=height;
       	iframe.frameBorder=0;
       	iframe.scrolling = 'no';
@@ -264,7 +264,7 @@
       			transitionName +=" video-transition2";
       		}
       		bg.addClass('bg0').find('img').hide();
-      		bg.parent().addClass(transitionName).transition(function(){bg.append(createVideo('','100%',270))}).next('.story-info').addClass('mgt0');
+      		bg.parent().addClass(transitionName).transition(function(){bg.append(createVideo('',window.event?480:'100%',270))}).next('.story-info').addClass('mgt0');
           	bg.append(createClose())
           
       	})
