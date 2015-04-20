@@ -176,7 +176,7 @@
       	}); 
       
       
-      window.event?(event.cancelBubble = true):event.stopPropagation();
+      window.event?(window.event.cancelBubble = true):event.stopPropagation();
       	return false;
       }
       function createVideo(id,width,height){
