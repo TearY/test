@@ -21,7 +21,7 @@
       <div class="big-video"><img src="./static/img/nba/hero_image.jpeg" width="100%" height="100%" style="vertical-align:bottom" alt="" class="pc"/><img src="./static/img/nba/hero_mobile.jpeg" alt="" width="100%" class="mobile"/>
         <div class="pop-info">
           <div class="video-info"> 
-            <p tabindex="0">when it comes to your health, offense is the best defense</p><a href="#" class="watch"> <img src="./static/img/nba/play_icon.png" alt="click to watch the video of Stephen Curry‘s show" width="30px"/><span aria-hidden="true">WATCH VIDEO</span></a>
+            <p tabindex="0">when it comes to your health, offense is the best defense</p><a href="javascript:;" class="watch"> <img src="./static/img/nba/play_icon.png" alt="click to watch the video of Stephen Curry‘s show" width="30px"/><span aria-hidden="true">WATCH VIDEO</span></a>
           </div>
           <div class="offensive">
             <h1 tabindex="0" class="title">MAKE A PROACTIVE PLAY FOR YOUR HEALTH </h1>
@@ -176,7 +176,8 @@
       	}); 
       
       
-      window.event?(window.event.cancelBubble = true):event.stopPropagation();
+      	event.stopPropagation();
+      	event.cancelBubble = true
       	return false;
       }
       function createVideo(id,width,height){
