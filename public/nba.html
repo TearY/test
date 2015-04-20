@@ -161,14 +161,14 @@
       		var _bg = $(this);
       		if(_bg.hasClass('video-transition')) // main video transiton on bg
       		{
-      			bg.removeClass('video-transition').transition(function(){
+      			bg.removeClass('video-transition').transition(function(bg){
       				bg.removeClass('bg0').find('img').fadeToggle();
-      			})
+      			}(bg));
       		}
       		else if(_bg.parent().hasClass('video-transition')){ //story video transition on bg parent
-      			bg.parent().removeClass('video-transition video-transition1 video-transition2').transition(function(){
+      			bg.parent().removeClass('video-transition video-transition1 video-transition2').transition(function(bg){
       				bg.removeClass('bg0').find('img').fadeToggle()
-      			}).next('.story-info').removeClass('mgt0');
+      			}(bg)).next('.story-info').removeClass('mgt0');
       		}
       		else if(_bg.hasClass('show-big-video-transition')){  //big video
       			_bg.removeClass('show-big-video-transition');
@@ -278,6 +278,15 @@
       		$('.show-big-video').addClass('show-big-video-transition').transition(function(){$('.show-big-video').append(createVideo('','100%','100%')).append(createClose())});
       	});				
       })
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+      { (i[r].q=i[r].q||[]).push(arguments)}
+      ,i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//http://secure-web.cisco.com/12rF8weHSb-mZplaS-wM8_DR4wL2yv6oogqk1F12hySrC2mKvM1iEZ4xAVrl4XitQGS1RAUfR1_uiosn_C-a5IVSoVVtDGtmGVLFVhOOCRVdOtdETy_qxw9hzYbW2uOPzHA5Kbm8YP8qesN-W9FhN7qk7LRrmpKthJn6Zsqm9kF8/http%3A%2F%2Fwww.google-analytics.com%2Fanalytics.js','ga');
+      ga('create', 'UA-39990278-1', 'auto');
+      ga('send', 'pageview');
     </script>
   </body>
 </html>
