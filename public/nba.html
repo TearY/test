@@ -7,16 +7,33 @@
     <link rel="stylesheet" href="./static/css/phoebe.min.css"/>
     <meta name="viewport" content="initial-scale=1.0"/><!--[if lt IE 10]><link rel="stylesheet" href="./static/css/nba-ie8.css">
     <![endif]-->
+<<<<<<< HEAD
     <meta property="og:type" content="article" />           
     <meta property="og:title" content="When It Comes To Your Health, Offense Is the Best Defense" />
     <meta property="og:url" content="https://teary.github.io/test/index.html" />
     <meta property="og:description" content="Take the first steps towards a healthier, more proactive lifestyle with inspiration from Stephen Curry and everyday people" />
+=======
+    <meta property="og:type" content="article" />		        
+    <meta property="og:title" content="ddddddd" />
+    <meta property="og:image" content="http://everydayparenting.com/wp-content/uploads/2014/08/tip-2.jpg" />
+    <meta property="og:url" content="https://teary.github.io/test/index.html" />
+    <meta property="og:description" content="cccccccccccccccccccc" />
+    <meta name="twitter:url" content="https://teary.github.io/test/index.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="aaa" />
+    <meta name="twitter:description" content="ddddddd" />
+    <meta name="twitter:image" content="http://everydayparenting.com/wp-content/uploads/2014/08/tip-2.jpg" />
+>>>>>>> origin/gh-pages
   </head>
   <body>
     <div class="nav"></div>
     <div class="main-content">
       <div class="logo"><img src="./static/img/nba/lock-up.png" alt="NBA KAISER PERMANENTE LOGO" height="90"/></div>
+<<<<<<< HEAD
       <div class="share"><span aria-hidden="aria-hidden">SHARE THIS</span><a href="http://www.facebook.com/sharer.php?u=https://teary.github.io/test/index.html" class="facebook"><img src="./static/img/nba/fb.png" alt="share this page to facebook"/></a><a href="https://twitter.com/intent/tweet?url=Find out why when it comes to your health, #offense is the best defense. [Link] via @KPThrive" class="twitter"><img src="./static/img/nba/tw.png" tabindex="0" alt="share this page to twitter"/></a></div>
+=======
+      <div class="share"><span aria-hidden="aria-hidden">SHARE THIS</span><a href="http://www.facebook.com/sharer.php?u=https://teary.github.io/test/index.html" class="facebook"><img src="./static/img/nba/fb.png" alt="share this page to facebook"/></a><a href="http://twitter.com/share?text=here is the link://teary.github.io/test/index.html" class="twitter"><img src="./static/img/nba/tw.png" tabindex="0" alt="share this page to twitter"/></a></div>
+>>>>>>> origin/gh-pages
       <div class="big-video"><img src="./static/img/nba/hero_image.jpeg" width="100%" height="100%" style="vertical-align:bottom" alt="" class="pc"/><img src="./static/img/nba/hero_mobile.jpeg" alt="" width="100%" class="mobile"/>
         <div class="pop-info">
           <div class="video-info"> 
@@ -155,6 +172,7 @@
         return this;
       }
       function closeVideo(){
+<<<<<<< HEAD
         var bg = $('.close-video').parent();
         bg.prev('img').removeClass('bgScale');
         bg.find('>iframe').hide();
@@ -177,6 +195,30 @@
             $('.pop-info').removeClass('pop-info-transition')
           }
         }); 
+=======
+      	var bg = $('.close-video').parent();
+      	bg.prev('img').removeClass('bgScale');
+      	bg.find('>iframe').hide();
+      	bg.find('>a,>iframe').remove(); 
+      	bg.each(function(){
+      		var _bg = $(this);
+      		if(_bg.hasClass('video-transition')) // main video transiton on bg
+      		{
+      			_bg.removeClass('video-transition').transition(function(){
+      				_bg.removeClass('bg0').find('img').fadeToggle();
+      			});
+      		}
+      		else if(_bg.parent().hasClass('video-transition')){ //story video transition on bg parent
+      			_bg.parent().removeClass('video-transition video-transition1 video-transition2').transition(function(){
+      				bg.removeClass('bg0').find('img').fadeToggle()
+      			}).next('.story-info').removeClass('mgt0');
+      		}
+      		else if(_bg.hasClass('show-big-video-transition')){  //big video
+      			_bg.removeClass('show-big-video-transition');
+      			$('.pop-info').removeClass('pop-info-transition')
+      		}
+      	}); 
+>>>>>>> origin/gh-pages
       
       
         window.event?(window.event.cancelBubble = true):event.stopPropagation();
@@ -198,6 +240,7 @@
       return '<div onclick="closeVideo()" class="close-video" aria-label="Close the video"></div>'
       }
       $(function(){
+<<<<<<< HEAD
         $('.video img,.story-image>img').lazyload();
         var videos = $('[data-videoName]');
         videos.each(function(){
@@ -213,23 +256,85 @@
             $(this).prev('img').removeClass('bgScale'); 
           }
         )
+=======
+      	$('.video img,.story-image>img').lazyload();
+      	var videos = $('[data-videoName]');
+      	videos.each(function(){
+      		var video = $(this);
+      		var name = video.attr('data-videoName');
+      		var alt = 'click to watch the video of '+ name;
+      		video.parent().append("<div class='video-bg'><img src='./static/img/nba/play_icon.png' alt='"+alt+"' tabindex='0' role='link' /></div>");
+      	});
+      	$('.video-bg').hover(
+      		function(){
+      			$(this).prev('img').addClass('bgScale');
+      		},function(){
+      			$(this).prev('img').removeClass('bgScale');	
+      		}
+      	)
+      	$(".trigger").on("click", function (e) {
+      		var $this = $(this);
+      		var $content = $this.parent().prev (".readmore-content");
+      		var expanded = $content.is(':visible');
+      
+      		// hide/show content
+      		if (expanded) {
+      			$content.slideUp();
+      			$this.find('.learn-more').text('Learn more about '+$this.closest('.story-info').find('.story-title').text()).end().find('.mark').text('+');
+      
+      		} else {
+      			$content.slideDown();
+      			$this.find('.learn-more').text('close ').end().find('.mark').text('-');
+      		}
+      		$this.attr('aria-expanded',!expanded)
+      		return false;
+          })
+>>>>>>> origin/gh-pages
       
           $('.story-image>.video-bg').click(function(){
             closeVideo();
             var bg = $(this);
       
+<<<<<<< HEAD
             bg.addClass('bg0').find('img').hide();
             bg.parent().addClass('video-transition').transition(function(){bg.append(createVideo('','100%','100%'))}).next('.story-info').addClass('mgt0');
+=======
+          	bg.addClass('bg0').find('img').hide();
+          	bg.parent().addClass('video-transition').transition(function(){bg.append(createVideo('','100%','100%'))}).next('.story-info').addClass('mgt0');
+>>>>>>> origin/gh-pages
       
             bg.append(createClose())
         });
       
+<<<<<<< HEAD
         $(".videos .video-bg").click(function(){
           closeVideo();
           var bg = $(this);
           var bgWidth = bg.width();
           var left = bg.offset().left;
           var right = window.screen.width-left-bgWidth;
+=======
+      	$(".videos .video-bg>img").click(function(){
+      		closeVideo();
+      		var bg = $(this).hide().parent();
+      		var bgWidth = bg.width();
+      		var left = bg.offset().left;
+      		var right = window.screen.width-left-bgWidth;
+      		
+      		var transitionName='video-transition'
+      		if(right<bgWidth&&left<bgWidth){
+      			
+      		}
+      		else if(right>=bgWidth){
+      			transitionName +=" video-transition1";
+      		}
+      		else if(left>=bgWidth){
+      			transitionName +=" video-transition2";
+      		}
+      		bg.addClass('bg0').find('img').hide();
+      		bg.parent().addClass(transitionName).transition(function(){bg.append(createVideo('',window.event?480:'100%',270))}).next('.story-info').addClass('mgt0');
+          	bg.append(createClose())
+>>>>>>> origin/gh-pages
           
           var transitionName='video-transition'
           if(right<bgWidth&&left<bgWidth){
