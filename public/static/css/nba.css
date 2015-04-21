@@ -380,7 +380,7 @@ body {
   letter-spacing: 2px;
 }
 .main-content .stories .story {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   min-height: 220px;
 }
 @media (max-width: 767px) {
