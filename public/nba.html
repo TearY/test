@@ -154,7 +154,7 @@
       
         return this;
       }
-      function closeVideo(){
+      function closeVideo(event){
         var bg = $('.close-video').parent();
         bg.prev('img').removeClass('bgScale');
         bg.find('>iframe').hide();
@@ -177,8 +177,6 @@
             $('.pop-info').removeClass('pop-info-transition')
           }
         }); 
-      
-      
         window.event?(window.event.cancelBubble = true):event.stopPropagation();
         return false;
       }
@@ -195,7 +193,7 @@
         return iframe;
       }
       function createClose(){
-      return '<div onclick="closeVideo()" class="close-video" aria-label="Close the video"></div>'
+      return '<div onclick="closeVideo(event)" class="close-video" aria-label="Close the video"></div>'
       }
       $(function(){
         $('.video img,.story-image>img').lazyload();
@@ -214,8 +212,8 @@
           }
         )
       
-          $('.story-image>.video-bg').click(function(){
-            closeVideo();
+          $('.story-image>.video-bg').click(function(e){
+            closeVideo(e);
             var bg = $(this);
             var videoImg = bg.prev('img');
             if(videoImg.length!=1){
@@ -231,8 +229,8 @@
             bg.append(createClose())
         })
       
-        $(".videos .video-bg").click(function(){
-          closeVideo();
+        $(".videos .video-bg").click(function(e){
+          closeVideo(e);
           var bg = $(this);
           var videoImg = bg.prev('img');
             if(videoImg.length!=1){
@@ -278,8 +276,8 @@
       
       
       
-        $('.watch').click(function(){
-          closeVideo();
+        $('.watch').click(function(e){
+          closeVideo(e);
           $('.pop-info').addClass('pop-info-transition').transition(function(){$(this).hide()});
           $('.show-big-video').addClass('show-big-video-transition').transition(function(){$('.show-big-video').append(createClose()).append(createVideo('cIzEjZI0_cY','100%','100%'))});
         }); 
