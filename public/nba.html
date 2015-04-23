@@ -206,11 +206,11 @@
       		var alt = 'click to watch the video of '+ name;
       		video.parent().append("<div class='video-bg'><img src='./static/img/nba/play_icon.png' alt='"+alt+"' tabindex='0' role='link' /><a href='"+url+"' class='transcript show-youtube-video' target='_blank' tabindex='-1' aria-hidden='true'>Watch the video of "+name+" on youtube </a><a href='transcript.html' target='_blank' class='transcript'>Transcript of "+name+"</a></div>");
       	});
-      	$('.video-bg').mouseover(
+      	$('.video-bg').mouseenter(
       		function(){
               console.log(1);
       			$(this).prev('img').addClass('bgScale');
-      		}).mouseout(function(){
+      		}).mouseleave(function(){
              console.log(2);
       			$(this).prev('img').removeClass('bgScale');	
       		}
