@@ -208,8 +208,10 @@
       	});
       	$('.video-bg').hover(
       		function(){
+              console.log(1);
       			$(this).prev('img').addClass('bgScale');
       		},function(){
+             console.log(2);
       			$(this).prev('img').removeClass('bgScale');	
       		}
       	)
