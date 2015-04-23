@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <link rel="stylesheet" type="text/css" href="./static/css/main.min.css">
+    <script text="text/javascript" src="./static/js/jquery.min.js"></script>
+    <script text="text/javascript" src="./static/js/menu.js"></script><!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="./static/css/main-ie8.css">
+    <script src="./static/js/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="./static/css/calendar.css">
+  </head>
+  <body>
+    <div class="kaiser">
+      <div class="offcanvas-container">
+        <!-- header start-->
+        <div class="skipnav"><a href="#maincontent">Skip to main content</a></div>
+        <div class="location-push-down">
+          <ul>
+            <li>
+              <div class="ghost-center"><a href="#">Nothern<br>California</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Southern<br>California</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Colorado /<br>Denver-Boulder</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Nothern<br>Colorado</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Southern<br>Colorado</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Georgia</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Hawaii</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Mid-Atlantic States</a></div>
+            </li>
+            <li>
+              <div class="ghost-center"><a href="#">Northwest</a></div>
+            </li>
+          </ul>
+        </div>
+        <header>
+          <button alt="Open mobile menu" title="Mobile menu - closed" class="mobile-menu">Open mobile menu</button>
+          <div class="main-menu"><a href="././" class="logo"><img src="./static/img/logo.png"></a>
+            <ul class="desktop">
+              <li><a href="#" class="grey location-push-down-link">Southern California</a></li>
+              <li class="separator"></li>
+              <li><a href="#" class="grey">Find a Doctor</a></li>
+              <li class="separator"></li>
+              <li><a href="#" class="grey">Find a Facility</a></li>
+              <li class="separator kiwi-visible-m"></li>
+              <li class="kiwi-visible-m"><a href="#" class="grey">Español</a></li>
+              <li class="member kiwi-hidden-m"><a href="#">Already a member?</a></li>
+              <li class="login"><a href="#">Sign On</a></li>
+              <li class="kiwi-hidden-m"><a href="#" class="grey">Español</a></li>
+            </ul>
+            <ul class="mobile">
+              <li><a href="#" class="grey">Español</a></li>
+            </ul>
+          </div>
+          <nav>
+              <ul class="menu-line">
+                <li><a href="#" class="link-category-section">Shop Our Plans</a>
+                  <div class="submenu-content stick-left">
+                      <ol class="list-left">
+                        <li><a href="#cat1" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat2" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat3" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                      </ol>
+                      <ol class="list-right">
+                        <li>
+                          <p><a href="#" class="is-external"><span class="pic-content"></span><span class="link-title">toto toto totototo toto toto tototo toto toto toto<span class="external-link"></span></span></a></p>
+                        </li>
+                        <li>
+                          <p><a href="#"><span class="pic-content"></span><span class="link-title">toto</span></a></p>
+                        </li>
+                      </ol>
+                  </div>
+                </li>
+                <li class="selected"><a href="#" class="link-category-section">In Your Area</a>
+                  <div class="submenu-content stick-left">
+                      <ol class="list-left">
+                        <li><a href="#cat1" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat2" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat3" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                      </ol>
+                      <ol class="list-right">
+                        <li>
+                          <p><a href="#" class="is-external"><span class="pic-content"></span><span class="link-title">toto toto totototo toto toto tototo toto toto toto<span class="external-link"></span></span></a></p>
+                        </li>
+                        <li>
+                          <p><a href="#"><span class="pic-content"></span><span class="link-title">toto</span></a></p>
+                        </li>
+                      </ol>
+                  </div>
+                </li>
+                <li><a href="#" class="link-category-section">Easer Healthcare</a>
+                  <div class="submenu-content stick-left">
+                      <ol class="list-left">
+                        <li><a href="#cat1" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat2" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat3" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                      </ol>
+                      <ol class="list-right">
+                        <li>
+                          <p><a href="#" class="is-external"><span class="pic-content"></span><span class="link-title">toto toto totototo toto toto tototo toto toto toto<span class="external-link"></span></span></a></p>
+                        </li>
+                        <li>
+                          <p><a href="#"><span class="pic-content"></span><span class="link-title">toto</span></a></p>
+                        </li>
+                      </ol>
+                  </div>
+                </li>
+                <li><a href="#" class="link-category-section">Healthier Outcomes</a>
+                  <div class="submenu-content stick-right">
+                      <ol class="list-left">
+                        <li><a href="#cat1" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat2" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat3" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                      </ol>
+                      <ol class="list-right">
+                        <li>
+                          <p><a href="#" class="is-external"><span class="pic-content"></span><span class="link-title">toto toto totototo toto toto tototo toto toto toto<span class="external-link"></span></span></a></p>
+                        </li>
+                        <li>
+                          <p><a href="#"><span class="pic-content"></span><span class="link-title">toto</span></a></p>
+                        </li>
+                      </ol>
+                  </div>
+                </li>
+                <li><a href="#" class="link-category-section">Social Postings</a>
+                  <div class="submenu-content stick-right">
+                      <ol class="list-left">
+                        <li><a href="#cat1" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat2" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#cat3" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                        <li><a href="#" class="is-external">link<span class="external-link"></span></a></li>
+                      </ol>
+                      <ol class="list-right">
+                        <li>
+                          <p><a href="#" class="is-external"><span class="pic-content"></span><span class="link-title">toto toto totototo toto toto tototo toto toto toto<span class="external-link"></span></span></a></p>
+                        </li>
+                        <li>
+                          <p><a href="#"><span class="pic-content"></span><span class="link-title">toto</span></a></p>
+                        </li>
+                      </ol>
+                  </div>
+                </li>
+              </ul>
+          </nav>
+        </header>
+        <nav class="mobile-menu">
+          <button alt="Close mobile menu" title="Close mobile menu" class="close-mobile-menu">Close mobile menu</button>
+            <ul class="menu-line">
+              <li><a href="#" class="link-category-section">Shop Our Plans</a>
+                <button title="Shop Our Plans - closed">Open/Close the sub menu</button>
+                <ol>
+                  <li><a href="#" class="is-external">Link 1<span class="external-link"></span></a></li>
+                  <li><a href="#">link 2<span class="external-link"></span></a></li>
+                  <li><a href="#">link 3<span class="external-link"></span></a></li>
+                </ol>
+              </li>
+              <li class="selected"><a href="#" class="link-category-section">In Your Area</a>
+                <button title="In Your Area - closed">Open/Close the sub menu</button>
+                <ol>
+                  <li><a href="#" class="is-external">Link 1<span class="external-link"></span></a></li>
+                  <li><a href="#">link 2<span class="external-link"></span></a></li>
+                  <li><a href="#">link 3<span class="external-link"></span></a></li>
+                </ol>
+              </li>
+              <li><a href="#" class="link-category-section">Easer Healthcare</a>
+                <button title="Easer Healthcare - closed">Open/Close the sub menu</button>
+                <ol>
+                  <li><a href="#" class="active">Home<span class="external-link"></span></a></li>
+                  <li><a href="#">Link 1<span class="external-link"></span></a></li>
+                  <li><a href="#">link 2<span class="external-link"></span></a></li>
+                  <li><a href="#">link 3<span class="external-link"></span></a></li>
+                </ol>
+              </li>
+              <li><a href="#" class="link-category-section">Healthier Outcomes</a>
+                <button title="Healthier Outcomes - closed">Open/Close the sub menu</button>
+                <ol>
+                  <li><a href="#" class="active">Home<span class="external-link"></span></a></li>
+                  <li><a href="#">Link 1<span class="external-link"></span></a></li>
+                  <li><a href="#">link 2<span class="external-link"></span></a></li>
+                  <li><a href="#">link 3<span class="external-link"></span></a></li>
+                </ol>
+              </li>
+              <li><a href="#" class="link-category-section">Social Postings</a>
+                <button title="Social Postings - closed">Open/Close the sub menu</button>
+                <ol>
+                  <li><a href="#" class="active">Home<span class="external-link"></span></a></li>
+                  <li><a href="#">Link 1<span class="external-link"></span></a></li>
+                  <li><a href="#">link 2<span class="external-link"></span></a></li>
+                  <li><a href="#">link 3<span class="external-link"></span></a></li>
+                </ol>
+              </li>
+              <li class="extra-mobile-links"><a href="#">Find a Doctor </a></li>
+              <li class="extra-mobile-links"><a href="#">Locate a Facility </a></li>
+            </ul>
+        </nav>
+        <!-- header end-->
+        <div id="maincontent" class="main-content">
+          <div class="socal southern-california">
+            <div class="area southern-california">
+              <div class="first-block">
+                <p class="location dynamic-bg">Discover Kaiser Permanents in:</p>
+                <div class="area-selector-container">
+                    <div class="select-container dynamic-border">
+                      <div class="arrow-bg"></div>
+                      <label for="location_select_top">Select a Region</label>
+                      <select id="location_select_top" title="Select a Region">
+                        <option>Northern California</option>
+                        <option>Southern California</option>
+                        <option>Colorado-Denver/Boulder</option>
+                        <option>Northern Colorado</option>
+                        <option>Southern Colorado</option>
+                        <option>Georgia</option>
+                        <option>Hawaii</option>
+                        <option>Mid-Atlantic States</option>
+                        <option>Northwest</option>
+                      </select>
+                      <button class="select-region-button">Select a Region</button><span class="link-select-region dynamic-color">City name</span>
+                      <div class="ul-bg"></div>
+                      <ul class="dynamic-border">
+                        <li data-value="Northern California" class="dynamic-color"><a href="#" alt="Link Northern California" class="dynamic-color">Northern California</a></li>
+                        <li data-value="Southern California" class="dynamic-color"><a href="#" alt="Link Southern California" class="dynamic-color">Southern California</a></li>
+                        <li data-value="Colorado-Denver/Boulder" class="dynamic-color"><a href="#" alt="Link Colorado-Denver/Boulder" class="dynamic-color">Colorado-Denver/Boulder</a></li>
+                        <li data-value="Northern Colorado" class="dynamic-color"><a href="#" alt="Link Northern Colorado" class="dynamic-color">Northern Colorado</a></li>
+                        <li data-value="Southern Colorado" class="dynamic-color"><a href="#" alt="Link Southern Colorado" class="dynamic-color">Southern Colorado</a></li>
+                        <li data-value="Georgia" class="dynamic-color"><a href="#" alt="Link Georgia" class="dynamic-color">Georgia</a></li>
+                        <li data-value="Hawaii" class="dynamic-color"><a href="#" alt="Link Hawaii" class="dynamic-color">Hawaii</a></li>
+                        <li data-value="Mid-Atlantic States" class="dynamic-color"><a href="#" alt="Link Mid-Atlantic States" class="dynamic-color">Mid-Atlantic States</a></li>
+                        <li data-value="Northwest" class="dynamic-color"><a href="#" alt="Link Northwest" class="dynamic-color">Northwest</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="top-space"></div>
+                <div class="gb-bread-crumbs">
+                  <ol>
+                    <li><a href="#">Home</a><span>&gt;</span></li>
+                    <li><a href="#">Southern California</a><span>&gt;</span></li>
+                    <li class="last"><a href="#">Antelope Valley</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="socal socal-events">
+                <div class="gb-content-width">
+                  <div class="link-block">
+                    <ul>
+                      <li><a href="#" class="link-welcome current">
+                          <div class="text-wrap"><span>Welcome</span><span class="tab-state"> Tab - Selected</span></div></a></li>
+                      <li><a href="#" class="link-location">
+                          <div class="text-wrap"><span>Location</span><span class="tab-state">Tab</span></div></a></li>
+                      <li><a href="#" class="link-health">
+                          <div class="text-wrap"><span>Health&nbsp;Care Services</span><span class="tab-state">Tab</span></div></a></li>
+                      <li><a href="#" class="link-emergency">
+                          <div class="text-wrap"><span>Emergency&nbsp;& Urgent Care</span><span class="tab-state">Tab</span></div></a></li>
+                      <li><a href="#" class="link-community">
+                          <div class="text-wrap"><span>Community</span><span class="tab-state">Tab</span></div></a></li>
+                    </ul>
+                  </div>
+                </div><a href="#" class="dynamic-bg gb-back-button"><span>‹</span>Back</a>
+              <div class="socal-back gb-content-width p20"><a href="#">< Back to Welcome Page</a></div>
+              <div class="gb-content-width p20 two-col-content">
+                <div class="col1">
+                    <div class="left-nav">
+                      <ul class="left-nav__list">
+                        <li class="left-nav__item"><a href="#" class="left-nav__link left-nav__link--active">Grants</a></li>
+                        <li class="left-nav__item"><a href="#" class="left-nav__link">Events</a></li>
+                        <li class="left-nav__item"><a href="#" class="left-nav__link">Event Sponsorship</a></li>
+                        <li class="left-nav__item"><a href="#" class="left-nav__link">Community Volunteerism & Volunteer Services</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="col2">
+                  <div class="intro">
+                    <h1 class="page-title">Events</h1><p>Check out our programs and activities designed to help you be your best in mind, body and spirit. Because when you thrive so does your family, our members and patients, our communities, and our organization. This just might be the start of something healthy.</p>
+                    <p>Kaiser Permanente Kern County offers a wide variety of classes to help you live your best life, including: Ask-A-Dietician, metabolic rate testing, muscle toning, and biofeedback, among many others.</p>
+                    <p>Class times and locations change often, so please make sure to call: 661-664-3712 or<br>877-524-7373 to schedule your attendance.</p><p>Many of the classes are open to the general public. Some classes may require a fee.</p><p>Download Kaiser Permanente Kern County class schedule for times and fee information:</p><ul><li><a href="blank" target="_blank">English</a></li><li><a href="blank" target="_blank">Español</a></li></ul><h2>Classes and events</h2><h3>Kaiser Permanente Kern County Health Education class schedules:</h3><p><a href="http://southerncalifornia.kaiserpermanente.org/kern/wp-content/uploads/sites/12/2015/02/Health-Classes-February.pdf" target="_blank">February 2015</a>&nbsp;|&nbsp;<a href="http://southerncalifornia.kaiserpermanente.org/kern/wp-content/uploads/sites/12/2015/02/Health-Classes-March.pdf" target="_blank">March 2015</a>&nbsp;|&nbsp;<a href="http://southerncalifornia.kaiserpermanente.org/kern/wp-content/uploads/sites/12/2015/02/Healthy-Pregnancy-Classes-thru-June-2015.pdf" target="_blank">Healthy Pregnancy Classes January – June 2015</a>&nbsp;|&nbsp;<a href="http://southerncalifornia.kaiserpermanente.org/kern/wp-content/uploads/sites/12/2015/02/Breastfeeding-Classes-thru-June-2015.pdf" target="_blank">Breastfeeding Classes January – June 2015</a>&nbsp;|&nbsp;<a href="http://southerncalifornia.kaiserpermanente.org/kern/wp-content/uploads/sites/12/2015/02/Baby-Care-Basics-Classes-thru-July-2015.pdf" target="_blank">Baby Care Basics Classes January – July 2015</a></p>
+                  </div>
+                  <div class="calendar">
+                    <div class="grid-list-select"><a href="#grid" class="grid current">Grid</a><a href="#list" class="list">List</a></div><div class="shc-calendar"> <table> <caption class="calendar-month"><a class="calendar-prev" href="https://southerncalifornia.kaiserpermanente.org/baldwinpark/community-events/events/?month=2014-10" title="Previous month"> <span >AUGUST</span></a>&nbsp; November 2014 &nbsp;<a class="calendar-next" href="https://southerncalifornia.kaiserpermanente.org/baldwinpark/community-events/events/?month=2014-12" title="Next month"><span >OCTOBER</span></a></caption> <thead> <tr> <th class="day-heading">Sun</th> <th class="day-heading">Mon</th> <th class="day-heading">Tue</th> <th class="day-heading">Wed</th> <th class="day-heading">Thu</th> <th class="day-heading">Fri</th> <th class="day-heading">Sat</th> </tr> </thead> <tbody> <tr> <td class="past-month past-date past-date weekend sun"><span class="shc-calendar-date">26</span></td> <td class="past-month past-date current-day mon"><span class="shc-calendar-date">27</span></td> <td class="past-month past-date future-date tue"><span class="shc-calendar-date">28</span></td> <td class="past-month past-date future-date wed"><span class="shc-calendar-date">29</span></td> <td class="past-month past-date future-date thu"><span class="shc-calendar-date">30</span></td> <td class="past-month past-date future-date fri"><span class="shc-calendar-date">31</span><ul> <li class="farmers-market"><a href="https://southerncalifornia.kaiserpermanente.org/baldwinpark/shc_calendar_event/farmers-market-6/?date=2014-10-31" title="Farmer" s="" market'="">Farmer's Market</a></li> </ul> </td> <td class="day-with-date future-date weekend sat"> <span class="shc-calendar-date">Nov 1</span> </td> </tr> <tr> <td class="day-with-date future-date weekend sun"> <span class="shc-calendar-date">2</span> </td> <td class="day-with-date future-date mon"> <span class="shc-calendar-date">3</span> </td> <td class="day-with-date future-date tue"> <span class="shc-calendar-date">4</span> </td> <td class="day-with-date future-date wed"> <span class="shc-calendar-date">5</span> </td> <td class="day-with-date future-date thu"> <span class="shc-calendar-date">6</span> </td> <td class="day-with-date future-date fri"> <span class="shc-calendar-date">7</span><ul> <li class="farmers-market"><a href="https://southerncalifornia.kaiserpermanente.org/baldwinpark/shc_calendar_event/healthy-cookin-demonstration-11/" title="Healthy Cookin" demonstration'="">Healthy Cookin' Demonstration</a></li> <li class="farmers-market"><a href="https://southerncalifornia.kaiserpermanente.org/baldwinpark/shc_calendar_event/farmers-market-6/?date=2014-11-07" title="Farmer" s="" market'="">Farmer's Market</a></li> </ul> </td> <td class="day-with-date future-date weekend sat"> <span class="shc-calendar-date">8</span> </td> </tr> <tr> <td class="day-with-date future-date weekend sun"> <span class="shc-calendar-date">9</span> </td> <td class="day-with-date future-date mon"> <span class="shc-calendar-date">10</span> </td> <td class="day-with-date future-date tue"> <span class="shc-calendar-date">11</span><ul> <li><a href="https://southerncalifornia.kaiserpermanente.org/baldwinpark/shc_calendar_event/veterans-day-event/" title="Veteran" s="" day="" event'="">Veteran's Day Event</a></li> </ul> </td> <td class="day-with-date future-date wed"> <span class="shc-calendar-date">12</span> </td> <td class="day-with-date future-date thu"> <span class="shc-calendar-date">13</span> </td> <td class="day-with-date future-date fri"> <span class="shc-calendar-date">14</span><ul> <li class="farmers-market"><a href="https://southerncalifornia.kaiserpermanente.org/baldwinpark/shc_calendar_event/farmers-market-6/?date=2014-11-14" title="Farmer" s="" market'="">Farmer's Market</a></li> </ul> </td> <td class="day-with-date future-date weekend sat"> <span class="shc-calendar-date">15</span> </td> </tr> <tr> <td class="day-with-date future-date weekend sun"> <span class="shc-calendar-date">16</span> </td> <td class="day-with-date future-date mon"> <span class="shc-calendar-date">17</span> </td> <td class="day-with-date future-date tue"> <span class="shc-calendar-date">18</span> </td> <td class="day-with-date future-date wed"> <span class="shc-calendar-date">19</span> </td> <td class="day-with-date future-date thu"> <span class="shc-calendar-date">20</span> </td> <td class="day-with-date future-date fri"> <span class="shc-calendar-date">21</span><ul> <li class="farmers-market"><a href="https://southerncalifornia.kaiserpermanente.org/baldwinpark/shc_calendar_event/farmers-market-6/?date=2014-11-21" title="Farmer" s="" market'="">Farmer's Market</a></li> </ul> </td> <td class="day-with-date future-date weekend sat"> <span class="shc-calendar-date">22</span> </td> </tr> <tr> <td class="day-with-date future-date weekend sun"> <span class="shc-calendar-date">23</span> </td> <td class="day-with-date future-date mon"> <span class="shc-calendar-date">24</span> </td> <td class="day-with-date future-date tue"> <span class="shc-calendar-date">25</span> </td> <td class="day-with-date future-date wed"> <span class="shc-calendar-date">26</span> </td> <td class="day-with-date future-date thu"> <span class="shc-calendar-date">27</span> </td> <td class="day-with-date future-date fri"> <span class="shc-calendar-date">28</span> </td> <td class="day-with-date future-date weekend sat"> <span class="shc-calendar-date">29</span> </td> </tr> <tr> <td class="day-with-date future-date weekend sun"> <span class="shc-calendar-date">30</span> </td> <td class="future-month future-date future-date mon"><span class="shc-calendar-date">Dec 1</span></td> <td class="future-month future-date future-date tue"><span class="shc-calendar-date">2</span></td> <td class="future-month future-date future-date wed"><span class="shc-calendar-date">3</span></td> <td class="future-month future-date future-date thu"><span class="shc-calendar-date">4</span></td> <td class="future-month future-date future-date fri"><span class="shc-calendar-date">5</span></td> <td class="future-month future-date future-date weekend sat"><span class="shc-calendar-date">6</span></td> </tr> </tbody> </table> </div>
+                    <div class="block-list list socal-welcome">
+                      <div class="article-block">
+                        <div class="articles-container">
+                          <p class="no-events">We’re sorry but there are no events scheduled for this location at this time.</p>
+                          <div class="article-elem article-elem--event">
+                            <div class="picture-holder picture-holder--event"><a href="#" alt="link name 1"><img src="./static/img/socal/event-left-pic.png"></a></div>
+                            <div class="day">14</div>
+                            <div class="overlay">
+                              <h3 class="h3--event"><a href="#" alt="link name 1">SEPTEMBER 14, 2014</a></h3>
+                              <div class="text-holder text-holder--event">
+                                <div class="color-separator color-separator--event dynamic-bg"></div>
+                                <p>Lorem Ipsum is simply dummy text of</p>
+                                <p><a href="#">See details ></a></p>
+                              </div>
+                              <div class="mobile-title"><a href="#">Lorem Ipsum is simply dummy text of</a></div>
+                              <div class="mobile-info">
+                                <p>5:30 PM <br> Venue Name and Address</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="article-elem article-elem--event">
+                            <div class="picture-holder picture-holder--event"><a href="#" alt="link name 2"><img src="./static/img/socal/event-left-pic.png"></a></div>
+                            <div class="day">14</div>
+                            <div class="overlay">
+                              <h3 class="h3--event"><a href="#" alt="link name 2">SEPTEMBER 14, 2014</a></h3>
+                              <div class="text-holder text-holder--event">
+                                <div class="color-separator color-separator--event dynamic-bg"></div>
+                                <p>Lorem Ipsum is simply dummy text of</p>
+                                <p><a href="#">See details ></a></p>
+                              </div>
+                              <div class="mobile-title"><a href="#">Lorem Ipsum is simply dummy text of</a></div>
+                              <div class="mobile-info">
+                                <p>5:30 PM <br> Venue Name and Address</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="article-elem article-elem--event">
+                            <div class="picture-holder picture-holder--event"><a href="#" alt="link name 3"><img src="./static/img/socal/event-left-pic.png"></a></div>
+                            <div class="day">14</div>
+                            <div class="overlay">
+                              <h3 class="h3--event"><a href="#" alt="link name 3">SEPTEMBER 14, 2014</a></h3>
+                              <div class="text-holder text-holder--event">
+                                <div class="color-separator color-separator--event dynamic-bg"></div>
+                                <p>Lorem Ipsum is simply dummy text of</p>
+                                <p><a href="#">See details ></a></p>
+                              </div>
+                              <div class="mobile-title"><a href="#">Lorem Ipsum is simply dummy text of</a></div>
+                              <div class="mobile-info">
+                                <p>5:30 PM <br> Venue Name and Address</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="article-elem article-elem--event">
+                            <div class="picture-holder picture-holder--event"><a href="#" alt="link name 4"><img src="./static/img/socal/event-left-pic.png"></a></div>
+                            <div class="day">14</div>
+                            <div class="overlay">
+                              <h3 class="h3--event"><a href="#" alt="link name 4">SEPTEMBER 14, 2014</a></h3>
+                              <div class="text-holder text-holder--event">
+                                <div class="color-separator color-separator--event dynamic-bg"></div>
+                                <p>Lorem Ipsum is simply dummy text of</p>
+                                <p><a href="#">See details ></a></p>
+                              </div>
+                              <div class="mobile-title"><a href="#">Lorem Ipsum is simply dummy text of</a></div>
+                              <div class="mobile-info">
+                                <p>5:30 PM <br> Venue Name and Address</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bottom-nav"><a id="previous" href="#" class="go-previous">PREVIOUS 5</a><a id="next" href="#" class="go-next">NEXT 5</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer start-->
+        <footer>
+          <div class="grey-bg"></div>
+          <div class="gb-content-width p20">
+            <nav class="mobile">
+              <ul>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Technical Information</a></li>
+              </ul>
+            </nav>
+            <nav class="desktop">
+              <div class="nav-column">
+                <div class="main-title">Learn More</div>
+                <ul>
+                  <li><a href="#">link 1</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 2</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 3</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 4</a></li>
+                </ul>
+              </div>
+              <div class="nav-column">
+                <div class="main-title">Our Regions</div>
+                <ul>
+                  <li><a href="#">link 1</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 2</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 3</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 4</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 5</a></li>
+                </ul>
+              </div>
+              <div class="nav-column">
+                <div class="main-title">Visit our other sites</div>
+                <ul>
+                  <li><a href="#">link 1</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 2</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 3</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 4</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 5</a></li>
+                </ul>
+              </div>
+              <div class="nav-column side-border">
+                <div class="main-title">Legal</div><span class="arrow"></span>
+                <div class="left-separator"></div>
+                <ul>
+                  <li><a href="#">link 1</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 2</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 3</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 4</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 5</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 6</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 7</a></li>
+                </ul>
+              </div>
+              <div class="nav-column side-border">
+                <div class="main-title"></div><span class="arrow"></span>
+                <div class="left-separator"></div>
+                <ul>
+                  <li><a href="#">link 1</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 2</a></li>
+                  <li class="space"></li>
+                  <li><a href="#">link 3</a></li>
+                </ul>
+              </div>
+            </nav>
+            <div class="copy-block">
+              <p class="copy">&copy; 2014 Kaiser Permanente</p>
+              <p class="bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged.
+              </p>
+            </div>
+          </div>
+        </footer>
+        <!-- footer end-->
+      </div>
+    </div>
+    <script src="./static/js/socal-events.js"></script>
+  </body>
+</html>
