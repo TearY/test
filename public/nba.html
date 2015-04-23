@@ -210,7 +210,9 @@
       		function(){
               console.log(1);
       			$(this).prev('img').addClass('bgScale');
-      		}).mouseleave(function(){
+      		}).mousemove(function(e){
+            e.preventDefault();
+          }).mouseleave(function(){
              console.log(2);
       			$(this).prev('img').removeClass('bgScale');	
       		}
