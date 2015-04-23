@@ -183,15 +183,13 @@
       }
       function createVideo(id,width,height,title){
       	if(!id) return;
-      	var url = 'https://www.youtube.com/embed/'+id+'?enablejsapi=1&rel=0&showinfo=0&autohide=1&color=white&theme=light&autoplay=1&wmode=opaque'
+      	var url = 'https://www.youtube.com/embed/'+id+'?enablejsapi=1&rel=0&showinfo=0&autohide=1&color=white&theme=light&autoplay=1'
       	var iframe = document.createElement('iframe');
       	iframe.width=width;
       	iframe.height=height;
       	iframe.frameBorder=0;
       	iframe.scrolling = 'no';
       	iframe.src=url;
-        iframe.allowTransparency=true;
-        iframe.wmode="opaque";
       	iframe.title=title||""+' youtube video player ';
       	return iframe;
       }
@@ -204,7 +202,7 @@
       	videos.each(function(){
       		var video = $(this);
       		var name = video.attr('data-videoName');
-      		var url = 'https://www.youtube.com/embed/'+video.attr("data-videoID")+'?enablejsapi=1&rel=0&showinfo=0&autohide=1&color=white&theme=light&autoplay=1&wmode=transparent';
+      		var url = 'https://www.youtube.com/embed/'+video.attr("data-videoID")+'?enablejsapi=1&rel=0&showinfo=0&autohide=1&color=white&theme=light&autoplay=1';
       		var alt = 'click to watch the video of '+ name;
       		video.parent().append("<div class='video-bg'><img src='./static/img/nba/play_icon.png' alt='"+alt+"' tabindex='0' role='link' /><a href='"+url+"' class='transcript show-youtube-video' target='_blank' tabindex='-1' aria-hidden='true'>Watch the video of "+name+" on youtube </a><a href='transcript.html' target='_blank' class='transcript'>Transcript of "+name+"</a></div>");
       	});
