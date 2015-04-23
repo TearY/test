@@ -34,3 +34,7 @@ img{
 .videobg:hover{
 		background-color:transparent;
 }
+.close-video{
+	zoom:0.5;
+	right:40px
+}
