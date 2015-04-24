@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <title>Document</title>
+    <title>Stephen Curry: Healthy Lifestyle with Kaiser Permanente</title>
     <link rel="stylesheet" href="./static/css/nba.css"/>
     <link rel="stylesheet" href="./static/css/phoebe.min.css"/>
     <meta name="viewport" content="initial-scale=1.0"/><!--[if lt IE 9]><link rel="stylesheet" href="./static/css/nba-ie8.css">
@@ -20,7 +20,7 @@
       <div class="big-video"><img src="./static/img/nba/hero_image.jpeg" width="100%" height="100%" style="vertical-align:bottom" alt="" class="pc"/><img src="./static/img/nba/hero_mobile.jpeg" alt="" width="100%" class="mobile"/>
         <div class="pop-info">
           <div class="video-info"> 
-            <p tabindex="0">When it comes to your health, offense is the best defense.</p><a href="javascript:;" class="watch"> <img src="./static/img/nba/play_icon.png" alt="click to watch the video of Stephen Curry‘s show" width="30px"/><span aria-hidden="true">WATCH VIDEO</span></a><a href="https://www.youtube.com/embed/cIzEjZI0_cY?enablejsapi=1&amp;rel=0&amp;showinfo=0&amp;autohide=1&amp;color=white&amp;theme=light&amp;autoplay=1" target="_blank" tabindex="-1" aria-hidden="true" class="show-youtube-video offscreen">watch the video of of Stephen Curry‘s show on youtube</a><a href="transcript.html" target="_blank" class="transcript">Transcript of Stephen Curry‘s show</a>
+            <p tabindex="0">When it comes to your health, offense is the best defense.</p><a href="javascript:;" class="watch"> <img src="./static/img/nba/play_icon.png" alt="click to watch the video of Stephen Curry‘s show" width="30px"/><span aria-hidden="true">WATCH VIDEO</span></a><a href="https://www.youtube.com/embed/cIzEjZI0_cY?enablejsapi=1&amp;rel=0&amp;showinfo=0&amp;autohide=0&amp;color=white&amp;theme=light&amp;autoplay=1&amp;version=3" target="_blank" tabindex="-1" aria-hidden="true" class="show-youtube-video offscreen">watch the video of of Stephen Curry‘s show on youtube</a><a href="transcript.html" target="_blank" class="transcript">Transcript of Stephen Curry‘s show</a>
           </div>
           <div class="offensive">
             <h1 tabindex="0" class="title">MAKE A PROACTIVE PLAY FOR YOUR HEALTH</h1>
@@ -202,7 +202,7 @@
       	videos.each(function(){
       		var video = $(this);
       		var name = video.attr('data-videoName');
-      		var url = 'https://www.youtube.com/embed/'+video.attr("data-videoID")+'?enablejsapi=1&rel=0&showinfo=0&autohide=1&color=white&theme=light&autoplay=1&wmode=transparent';
+      		var url = 'https://www.youtube.com/embed/'+video.attr("data-videoID")+'?enablejsapi=1&rel=0&showinfo=0&autohide=0&color=white&theme=light&autoplay=1&wmode=transparent&version=3';
       		var alt = 'click to watch the video of '+ name;
       		video.parent().append("<div class='video-bg'><img src='./static/img/nba/play_icon.png' alt='"+alt+"' tabindex='0' role='link' /><a href='"+url+"' class='transcript show-youtube-video' target='_blank' tabindex='-1' aria-hidden='true'>Watch the video of "+name+" on youtube </a><a href='transcript.html' target='_blank' class='transcript'>Transcript of "+name+"</a></div>");
       	});
