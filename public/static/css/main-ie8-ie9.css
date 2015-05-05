@@ -1,0 +1,16 @@
+html body .kaiser .offcanvas-container .location-push-down,
+html body .kaiser.pushed-down .location-push-down {
+  position: static\0;
+}
+html body .kaiser .offcanvas-container header,
+html body .kaiser.pushed-down header {
+  position: static\0;
+}
+html body .kaiser .offcanvas-container .main-content,
+html body .kaiser.pushed-down .main-content {
+  padding-top: 0\0!important;
+}
+html body .kaiser .offcanvas-container .main-content .notice,
+html body .kaiser.pushed-down .main-content .notice {
+  display: none\0;
+}
