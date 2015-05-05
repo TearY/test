@@ -55,16 +55,3 @@ html body .kaiser .main-content .locate-facility section.map-container .map-cont
 .zip-search button {
   padding: 6px 15px 9;
 }
-html body .kaiser.pushed-down,
-.location-push-down {
-  position: static;
-}
-header {
-  position: static;
-}
-.main-content {
-  padding-top: 0 !important;
-}
-.main-content .notice {
-  display: none;
-}
