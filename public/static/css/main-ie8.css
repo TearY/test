@@ -53,7 +53,18 @@ html body .kaiser .main-content .locate-facility section.map-container .map-cont
   max-width: 940px !important;
 }
 .zip-search button {
-  padding: 9px 15px;
   padding: 6px 15px 9;
-  padding: 9px 15px 9 0;
+}
+html body .kaiser.pushed-down,
+.location-push-down {
+  position: static;
+}
+header {
+  position: static;
+}
+.main-content {
+  padding-top: 0 !important;
+}
+.main-content .notice {
+  display: none;
 }
