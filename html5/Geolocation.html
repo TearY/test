@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+
+ <html>
+
+ <head>
+
+ <meta charset="utf-8"/>
+
+ <title>Geolocation API地理定位</title>
+
+ <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+     <script type="text/javascript">
+
+     function start(){
+
+     if (navigator.geolocation){
+
+     var MyPosition=navigator.geolocation.getCurrentPosition(successCallback,errorCallback);
+
+     }
+
+     else {
+
+     alert("很遗憾，您的浏览器不支持HTML5来获取地理位置信息。");
+
+     }
+
+     }
+          function successCallback(position){
+
+     var coords = position.coords;
+
+     var latlng = new google.maps.LatLng(coords.latitude, coords.longitude);
+
+     var myOptions = {
+
+     zoom: 14, 
+
+     center: latlng, 
+
+     mapTypeId: google.maps.MapTypeId.ROADMAP 
+
+     }; 
+
+     var map = new google.maps.Map(document.getElementById("MyPosition"), myOptions); 
+
+     //标记您的位置信息 
+
+     var marker = new google.maps.Marker({
+
+     position: latlng,    //将前面设定的坐标标注出来
+
+     map: map //将该标注设置在刚才创建的map中
+
+     });
+       var infoWindow = new google.maps.InfoWindow({
+
+     content: "当前您的位置：<br/>经度：" + latlng.lat() + "<br/>维度：" + latlng.lng()   //提示窗体内的提示信息
+
+     }); 
+
+     infoWindow.open(map, marker);//打开提示窗口
+
+     }
+
+     
+
+     function errorCallback(error){ 
+
+     switch (error.code) {
+
+     case 1: alert("非常抱歉，位置服务被拒绝。");break;
+
+     case 2: alert("很遗憾，暂时获取不到位置信息。");break;
+
+     case 3: alert("此次获取信息超时。");break;
+
+     default:alert("未知的错误。");break;
+
+     }}
+
+     </script>
+          </head>
+
+     <body >
+
+     <div id="MyPosition" style="width:980px; height: 500px"></div>
+
+     <button onClick="start()">点击获取您在Google Map上的位置</button>
+
+     </body>
+
+     </html>
