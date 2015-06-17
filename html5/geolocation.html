@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Geolocation API地理定位</title>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+    </script>
     <script type="text/javascript">
     //http://www.w3.org/TR/geolocation-API/
     //https://developer.mozilla.org/en-US/docs/Web/API/Navigator/geolocation
@@ -53,16 +54,16 @@
     function errorCallback(error) {
         switch (error.code) {
             case error.TIMEOUT:
-                showError("A timeout occured! Please try again!");
+                alert("A timeout occured! Please try again!");
                 break;
             case error.POSITION_UNAVAILABLE:
-                showError('We can\'t detect your location. Sorry!');
+                alert('We can\'t detect your location. Sorry!');
                 break;
             case error.PERMISSION_DENIED:
-                showError('Please allow geolocation access for this to work.');
+                alert('Please allow geolocation access for this to work.');
                 break;
             case error.UNKNOWN_ERROR:
-                showError('An unknown error occured!');
+                alert('An unknown error occured!');
                 break;
         }
     }
