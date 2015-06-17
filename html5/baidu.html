@@ -21,7 +21,9 @@
 <body>
     <div id="map"></div>
     <script>
-    navigator.geolocation.getCurrentPosition(translatePoint); //定位 
+    navigator.geolocation.getCurrentPosition(translatePoint, function() {}, , {
+        enableHighAccuracy: true
+    }); //定位 
 
 
     function translatePoint(position) {
