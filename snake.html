@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大蛇</title>
+	<meta>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=7">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection"content="telephone=no, email=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+<meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer" content="webkit">
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+<meta name="HandheldFriendly" content="true">
+<!-- 微软的老式浏览器 -->
+<meta name="MobileOptimized" content="320">
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait">
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- UC应用模式 -->
+<meta name="browsermode" content="application">
+<!-- QQ应用模式 -->
+<meta name="x5-page-mode" content="app">
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no">
+<!-- 适应移动端end -->
+<style>
+html,body{
+	overflow: hidden;
+}
+body{
+	perspective: 800px;
+}
+.scale{
+	transform: translate3d(0,-50%,-1300px);
+	background: -webkit-linear-gradient(rgb(255,0,0),rgb(255,128,0),rgb(255,255,0),rgb(0,255,0),rgb(0,255,255),rgb(0,0,255),rgb(128,0,255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style>
+</head>
+<body>
+	<pre class="scale">
+
+		                                                                            ,;  ,.;
+		                                                                          .,;s7rr;;.
+		                                                                       .:r:::,.: .;;;;
+		                                                                       ,;r;;;.r;.;.;;..
+		                                                                     .;rv;,L:7siCF. ,:..
+		                                                                      ;FL raTr3XHaY;,;:.
+		                                                                      ,vL:l@@:.,:lTr;;r,
+		                                                                       ,Fvasi;.  .rvriL;;
+		                                                                       ;;ll.,7;:  iYvFrYr.
+		                                                                        ,7Pr.;:.  :r;:ir;.
+		                                                                         ;7Fr     ;r  ;;
+		                                                                          .rsL. r33T7;;;..;;rls7;
+		                                                                             FX@@@FsE@8LrsrrSZr,:;.
+		                                                                            t@@@Z;;CZ; ,Tr;.r,.;r,r ,;
+		                                                                          ;@@@DZS#@@r5#@l;v:;:;r;,r@8ar
+		                                                                       s6@@Fs;   :@@ET;:;,:r7vY;;.;@@@@@P,
+		                                                                     :@@Hr.;;   ,H@F   ;;;:rrr;;:sr;;r;,E@X  ,
+		                                                                ..;;3@8:  ;:  .s@@@@8kPY;:, .,:::.;r;;;.;r@@;
+		                                                             .;;,5@@@r   ,,,;P@@U. rF@P:rr:        ;;;; iS,H6.
+		                                                            ;i;:iTrD#  ,7CD@@ZX@bSr..L;,,;r;;:;;;;;   7:r5::37
+		                                                           :i;:7,v@D8@@@@@@S:  rb@@@mv;;. ;r;;;;;;;;: :r;.. ;X
+		                                                           7,;7;@@;.@@l7@@E,;r;,;k6r;. .,   .         ;Tr.;  v
+		                                                          rr;7v@5  8@T T@@;.;;;;:;.,;    ..:rD@Fr..:rZ5TYr;  ,
+		                                                          #@@86; ,@@#. P@#, ,.:.;;; :7rk@8#@@@@@@@@@@mHC;.   ,
+		                                                         T@mC@L;;s@@r :@@8;:;;::7;, F@#l8@kPXU3svssCX8S,    ,
+		                                                        rt,  ;C7rv@8  r@@@Cr7rr;i7r;v@H,;s@SFXPXEXEFi.  ..,,.
+		                                                       .v:,...7L r@@,,l@@8a..:.:rrr; 6@;;:rY,..;;:...,,::r,
+		                                                       ;;:. .,;;.8@@trP@bH@,  ,7r;:;;r@r;,:rTr;.::;;;r773;
+		                                                       r;,   ,;.75Da;.P8F@@X,rs3;.    :s;..,;rrsvTr;:::ri
+		                                                      rr;   .:vtr;8. r@@rL@@krr.  ...  :; . .,;;  ;rr;;,
+		                                                    ,vr:.:;rrrsl.77 ;@@3, s@@E.  .:. . ;:..,,,
+		                                                  ,rr;;;rr;,  ;;lr.,@@7.:,,U@@3:;;:    ;7.:..
+		                                                 rr;rvr;.    .rrr; i@EYaUaUaZm8FFPT;.: :s,
+		                                                Yr;;r:       ;C .:7tSCbDmHDEPaXCm@@bECr;,
+		                                               7; .          3.,7FD#3FS77;.::; ,;r7X8@Lv
+		                                              X@88Pr        ;L.@3HSr;:l;. ;;r;  :,;:,rEk
+		                                             7tYvla@@     :rs 38;r,r7t. .r;rrr:. ,,r;;:t
+		                                            P@@bD7 .@Z  ;7vr  #r;;Y;r; .;:;r;;.;;,,,;r,,.
+		                                           8@@@@#@l rHrr;.   ;r;::, ;..;;,7;;r:,.;;:,;;.:
+		                                          @@@@8EPkk;;r.     .Yr, .,:l:r; rr:r;.;;.,;;:;;:
+		                                        ;@@@@DEks3L,        sL;:;T;:7r; ,i;;;: .,,..,::rr.
+		                                       C@@##PXSYY:          37;;;rTrr;. 7r::r:  .......;Y;
+		                                     :@@@@EEPYr;           ;YL;:;,;3r, ;Y;,;7; ....,.. :rT
+		                                    ,SsrrS8Ftr             Yr;r,:;,;v,,7r,:;Y; ...,.,..,;r.
+		                                    r;.   rZ;             ;Y;:;;:,;;rr;7:,:rr;.....,.,.,;:
+		                                   ,r;:,. ;;              rr;:,r;,,rrir;,.:rr;..,.,,,.. ;;:
+		                                   ;;;,,  ,,             ,rr;; :;;.,;Yr; ,;T;;...,.,.,.,,;;
+		                                   rr:;.  ::             ;rr;:: r;: rY5;..;Y;;:.,.,.,.,..;;:
+		                                  .7;.;.  ;:             ;rr;::..r;.,lr7.,;v;;;..,.,,,.,.:,;.
+		                                  :r; ;.  ;             .;7;;,.: :r;,;;i:,r7;;r...,,,.,.,,::r
+		                                  rr. ;:,i;             ,rr;;, ;, .r;;:7r,;Y;;r:.,,,,:,,,:;,;,
+		                                 ,L;.;.;r7              ;rr;;. ,;  .rr:;7:;7;;r;.,:,:,:,:.;::;
+		                                 Cl;.rr;t.              ;r;;;.  ;:  .7;;r;;7;;;r..::.,,,,:,;.;.
+		                                 XsY,.P7:               ;r;;;.. ,;.  ,T;rr;r;;;r:,;,,,,,,:,;::;
+		                                 3TLr.:r                ;r;;:,.. ;;.  :r;rrr;;;r;,;:.:,:,,.:;,;
+		                                 lC55Yr;7r:             ;;;;;.....r:...,;rLrr;;;r,;:,,:,:,:.;;;.
+		                                  ,;rL3srYD;            ;r;;:.....:r..:, ;;r;;;;r;:;.:,:::,,,;:;
+		                                          :.            ;rr;:...,:.;; :: , ;r;;;rr:;..:,:,:,,;;;.
+		                                                        :7r;,....;,.r:,;.: .r;;;:7;;.,,:,,,,.,;;,
+		                                                        .r7;,.....;.:;::.:: ;;;;;;7;,.,,:,:,,,,r;
+		                                                         rr;.. ....; ;r; :;  r;r;:7r,.,:::,,,,.;r
+		                                                         ;i;; .....:; rr.:,  .r;;:;T:.,,:,:,,,,.r:
+		                                                         ;v;;. .....;;:r,;    ,r;;,lr.,:,,,,.,.,:r
+		                                                          s;r, ...,..;r,;;     :r;;;r.,,,.,.,.,.;;,
+		                                                          r;;;.  . .:.7;,;      ;r;;r: ,.,;:.:,,.;;
+		                                                          ;r;;r.., .,;;r;:       ;;;r;:,;;;,.,,.,.;,
+		                                                           vrr;;.: . :;:r:       ,;;;r;r;;;,.:,.,::;
+		                                                           rir;;;,. . ;:;;        ;;;rr;;;;.,;,..,;;r
+		                                                           ;rr;;;;:  .,;;;,        r;r;rrr;,:;.,...;r
+		                                                           ;rr;;;;r.  : ;r,        .r;;r7r;,;;..... r;
+		                                                           ;rr:;;:;;. ,, L,         ;r;;vT;,;;...,   s
+		                                                            v7;;r;:;: .:..;          r;;lT;,;;.....  ,;
+		                                                            77;;;;,;;. ;..;.         .;;Tl::;r .....  ;;
+		                                                            7r;;;;;,;:.:..;;          .:vs;:rr.......  ;
+		                                                           .rr;;;;;,:;.;..,r           ;v5;;;r ..... . ,;
+		                                                            7r;;;.;:.:;;...;            Ylr;rr... . .   ;.
+		                                                            rr;r: .;:,;; ..;            .sr;;r ... ...  .;
+		                                                            7r;;.  ;r :r..,:             ir;rr  ,.. . .  ;
+		                                                            rr;:   rr ,;,,,,             :r;;7.... .     :.
+		                                                            r;:   .;; ::,,;               r;;r. ... . .  .:
+		                                                            7:,   .;. :,.,;               :r;Y.  ...      ;.
+		                                                           :7..   .;. ;.,.;                r;r: ..,       :,
+		                                                           r;     ;; .:..:,                ;;r, .,,,       r
+		                                                           i,    .r:  : .,,                 rr; ,.:,,      ;.
+		                                                           r     ;r. ., .;,                 ;r; .,.:,.     :;
+		                                                           :    ,;r  .: .;:                 .rr ,,..,..     ;
+		                                                          .;    ;r:  ..  ;.                  ;r ,;..,,..    :;
+		                                                          ::   :r;.  ,,  ;                   .Y ,;. ,,,,.   .;
+		                                                          ,:  .;r;   ;. .;                    Y..;. .,.,.  .;:
+		                                                          :,  ;;r:   :. ,:                    r:.;: .,,,. .; ;
+		                                                          ,: :;;r.   ;  ;;                    :; ;;. ...  ;. :,
+		                                                          .;,;r;r .  ;. ;;                    .r.;;.  .  ;;.  ;
+		                                                           rr;;r: ,  ;. :;                     ;.;;; ..  rr;  ;
+		                                                           ;;;;; ,,  :..::.                    ,.;;;.     ,;; :;
+		                                                           ;;;;; ;,  ; ..:,                    ..:;;.       .r:;
+		                                                           .r;r ,;:  ,.. .;                     :,;;,    ;5k@@
+		                                                           .;;;.;;,  ,.  ;,                     ,:;;, rm@@@8P#;
+		                                                            r;.,;:     ,;                       ,:;77D@@@8bH#E7
+		                                                            ;, ;,   ,3@kr                        Tsr S@@#bDbD6F
+		                                                           .. .  .rD@@UTY                        ,.  6@##HDHHFa.
+		                                                           rr;;7E@@@6ss7                             #8b##DbPXlr
+		                                                             P@@@6mPHU7                              @@6H6DkPaTr
+		                                                             @@8DPZDP.                               @8#HHm6PFr;
+		                                                            Y@Dm6X#@r                                @#ZmUST7;7s
+		                                                            @8EaS8H;                                 @@ks7;7sPU;
+		                                                           s@EXE@P,                                  ;#@@@@@@U;
+		                                                           @kPb@F.                                     .;rr;
+		                                                          a@8@#r
+		                                                          @@@3.
+		                                                          Ukr
+
+</pre>
+</body>
+</html>
